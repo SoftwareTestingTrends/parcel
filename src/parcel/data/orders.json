@@ -1,0 +1,454 @@
+{
+  "today": "2026-11-18",
+  "orders": [
+    {
+      "order_id": "HL-10231",
+      "customer_email": "amira.khan@example.com",
+      "customer_name": "Amira Khan",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-02",
+      "dispatched_on": "2026-11-03",
+      "delivered_on": "2026-11-06",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "MUG-04",
+          "name": "Stoneware mug, sage",
+          "price": 12.0,
+          "qty": 4
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 51.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10232",
+      "customer_email": "amira.khan@example.com",
+      "customer_name": "Amira Khan",
+      "country": "GB",
+      "status": "processing",
+      "ordered_on": "2026-11-17",
+      "dispatched_on": null,
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "THR-11",
+          "name": "Wool throw, oatmeal",
+          "price": 65.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 65.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10240",
+      "customer_email": "ben.walker@example.com",
+      "customer_name": "Ben Walker",
+      "country": "GB",
+      "status": "dispatched",
+      "ordered_on": "2026-11-13",
+      "dispatched_on": "2026-11-14",
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "LMP-02",
+          "name": "Ceramic table lamp",
+          "price": 48.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 48.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10244",
+      "customer_email": "chloe.martin@example.com",
+      "customer_name": "Chloe Martin",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-10-01",
+      "dispatched_on": "2026-10-03",
+      "delivered_on": "2026-10-09",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "RUG-07",
+          "name": "Jute rug 160x230",
+          "price": 189.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 29.0,
+      "total": 218.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10251",
+      "customer_email": "dev.patel@example.com",
+      "customer_name": "Dev Patel",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-08",
+      "dispatched_on": "2026-11-09",
+      "delivered_on": "2026-11-12",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "PLT-01",
+          "name": "Dinner plates, set of 4",
+          "price": 36.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 39.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10252",
+      "customer_email": "dev.patel@example.com",
+      "customer_name": "Dev Patel",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-08",
+      "dispatched_on": "2026-11-10",
+      "delivered_on": "2026-11-15",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "CHR-03",
+          "name": "Oak dining chair",
+          "price": 145.0,
+          "qty": 2
+        }
+      ],
+      "delivery_cost": 29.0,
+      "total": 319.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10260",
+      "customer_email": "ella.obrien@example.com",
+      "customer_name": "Ella O'Brien",
+      "country": "IE",
+      "status": "dispatched",
+      "ordered_on": "2026-11-05",
+      "dispatched_on": "2026-11-06",
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "CND-09",
+          "name": "Soy candle, fig",
+          "price": 18.0,
+          "qty": 2
+        }
+      ],
+      "delivery_cost": 9.95,
+      "total": 45.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10263",
+      "customer_email": "farah.ali@example.com",
+      "customer_name": "Farah Ali",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-10",
+      "dispatched_on": "2026-11-11",
+      "delivered_on": "2026-11-13",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "PIL-02",
+          "name": "Feather pillow pair",
+          "price": 42.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 45.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10270",
+      "customer_email": "george.evans@example.com",
+      "customer_name": "George Evans",
+      "country": "GB",
+      "status": "cancelled",
+      "ordered_on": "2026-11-11",
+      "dispatched_on": null,
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "VAS-05",
+          "name": "Glass vase, smoke",
+          "price": 28.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 31.95,
+      "refunded": 31.95
+    },
+    {
+      "order_id": "HL-10275",
+      "customer_email": "hana.suzuki@example.com",
+      "customer_name": "Hana Suzuki",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-01",
+      "dispatched_on": "2026-11-02",
+      "delivered_on": "2026-11-05",
+      "payment_method": "gift_card",
+      "items": [
+        {
+          "sku": "TWL-06",
+          "name": "Bath towel set",
+          "price": 54.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 54.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10281",
+      "customer_email": "isaac.cohen@example.com",
+      "customer_name": "Isaac Cohen",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-12",
+      "dispatched_on": "2026-11-13",
+      "delivered_on": "2026-11-14",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "KTL-01",
+          "name": "Enamel kettle",
+          "price": 39.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 42.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10288",
+      "customer_email": "jade.thompson@example.com",
+      "customer_name": "Jade Thompson",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-03",
+      "dispatched_on": "2026-11-07",
+      "delivered_on": "2026-11-10",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "BWL-02",
+          "name": "Serving bowl, personalised",
+          "price": 32.0,
+          "qty": 1,
+          "personalised": true
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 35.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10290",
+      "customer_email": "kofi.mensah@example.com",
+      "customer_name": "Kofi Mensah",
+      "country": "GB",
+      "status": "processing",
+      "ordered_on": "2026-11-18",
+      "dispatched_on": null,
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "SOF-01",
+          "name": "Two-seat sofa, made to order",
+          "price": 899.0,
+          "qty": 1,
+          "made_to_order": true
+        }
+      ],
+      "delivery_cost": 29.0,
+      "total": 928.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10296",
+      "customer_email": "lena.fischer@example.com",
+      "customer_name": "Lena Fischer",
+      "country": "DE",
+      "status": "delivered",
+      "ordered_on": "2026-09-20",
+      "dispatched_on": "2026-09-22",
+      "delivered_on": "2026-09-30",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "MIR-02",
+          "name": "Round wall mirror",
+          "price": 75.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 9.95,
+      "total": 84.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10302",
+      "customer_email": "maya.singh@example.com",
+      "customer_name": "Maya Singh",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-09",
+      "dispatched_on": "2026-11-10",
+      "delivered_on": "2026-11-12",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "GLS-08",
+          "name": "Wine glasses, set of 6",
+          "price": 30.0,
+          "qty": 1
+        },
+        {
+          "sku": "NAP-02",
+          "name": "Linen napkins, set of 4",
+          "price": 22.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 52.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10305",
+      "customer_email": "noah.reid@example.com",
+      "customer_name": "Noah Reid",
+      "country": "GB",
+      "status": "dispatched",
+      "ordered_on": "2026-11-06",
+      "dispatched_on": "2026-11-07",
+      "delivered_on": null,
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "CLK-01",
+          "name": "Wall clock",
+          "price": 44.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 44.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10311",
+      "customer_email": "olivia.brown@example.com",
+      "customer_name": "Olivia Brown",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-04",
+      "dispatched_on": "2026-11-05",
+      "delivered_on": "2026-11-07",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "DUV-01",
+          "name": "Duvet, 10.5 tog",
+          "price": 79.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 79.0,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10318",
+      "customer_email": "priya.nair@example.com",
+      "customer_name": "Priya Nair",
+      "country": "GB",
+      "status": "returned",
+      "ordered_on": "2026-10-20",
+      "dispatched_on": "2026-10-21",
+      "delivered_on": "2026-10-24",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "LMP-04",
+          "name": "Floor lamp",
+          "price": 120.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 120.0,
+      "refunded": 120.0
+    },
+    {
+      "order_id": "HL-10322",
+      "customer_email": "sam.jones@example.com",
+      "customer_name": "Sam Jones",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-14",
+      "dispatched_on": "2026-11-15",
+      "delivered_on": "2026-11-17",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "CUS-03",
+          "name": "Velvet cushion, final sale",
+          "price": 15.0,
+          "qty": 2,
+          "final_sale": true
+        }
+      ],
+      "delivery_cost": 3.95,
+      "total": 33.95,
+      "refunded": 0.0
+    },
+    {
+      "order_id": "HL-10330",
+      "customer_email": "tom.harris@example.com",
+      "customer_name": "Tom Harris",
+      "country": "GB",
+      "status": "delivered",
+      "ordered_on": "2026-11-11",
+      "dispatched_on": "2026-11-12",
+      "delivered_on": "2026-11-14",
+      "payment_method": "card",
+      "items": [
+        {
+          "sku": "HTR-01",
+          "name": "Ceramic fan heater",
+          "price": 59.0,
+          "qty": 1
+        }
+      ],
+      "delivery_cost": 0.0,
+      "total": 59.0,
+      "refunded": 0.0
+    }
+  ]
+}
