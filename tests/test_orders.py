@@ -34,6 +34,18 @@ def test_refund_limit_boundary(amount, allowed):
             store.issue_refund(order_id, email, amount, "damaged_or_faulty")
 
 
+def test_refund_limit_is_per_order_not_per_refund():
+    store = OrderStore.seeded()
+    order_id, email = "HL-10252", "dev.patel@example.com"  # total £319
+    store.issue_refund(order_id, email, 40, "damaged_or_faulty")
+    with pytest.raises(ToolError, match="£40.00 has already been refunded"):
+        store.issue_refund(order_id, email, 40, "damaged_or_faulty")
+    assert store.issue_refund(order_id, email, 10, "damaged_or_faulty")["amount_gbp"] == 10
+    with pytest.raises(ToolError, match="per order"):
+        store.issue_refund(order_id, email, 0.01, "damaged_or_faulty")
+    assert store.orders[order_id]["refunded"] == 50
+
+
 def test_guard_off_lets_large_refunds_through():
     store = OrderStore.seeded(refund_guard=False)
     refund = store.issue_refund("HL-10252", "dev.patel@example.com", 200, "damaged_or_faulty")

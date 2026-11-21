@@ -71,7 +71,7 @@ Parcel is meant to fail in realistic ways, so the course has real failures to fi
 
 - Retrieval is plain keyword search (BM25). "How long does a refund take?" ranks the returns article first, because it contains "as long as". "When will I get my money back?" misses the refunds article entirely.
 - Retrieval only looks at the latest message. A follow-up like "it's dev.patel@example.com" retrieves nothing.
-- The £50 limit is enforced in the refund tool, but the hand-off rules live only in the prompt.
+- The £50-per-order refund limit is enforced in the refund tool, but the hand-off rules live only in the prompt.
 
 ## Layout
 

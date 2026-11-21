@@ -77,10 +77,16 @@ class OrderStore:
         refundable = round(order["total"] - order["refunded"], 2)
         if amount > refundable:
             raise ToolError(f"Only £{refundable:.2f} of this order can still be refunded.")
-        if self.refund_guard and amount > policy.REFUND_LIMIT_GBP:
+        # The limit is per order, so count what this order has already been refunded.
+        if self.refund_guard and order["refunded"] + amount > policy.REFUND_LIMIT_GBP:
+            already = (
+                f" £{order['refunded']:.2f} has already been refunded on this order."
+                if order["refunded"]
+                else ""
+            )
             raise ToolError(
-                f"Refunds over £{policy.REFUND_LIMIT_GBP:.2f} need the customer care team. "
-                "Hand the customer off instead."
+                f"Refunds over £{policy.REFUND_LIMIT_GBP:.2f} per order need the customer care "
+                f"team.{already} Hand the customer off instead."
             )
         if reason == "damaged_or_faulty" and order["status"] != "delivered":
             raise ToolError("Only delivered orders can be refunded as damaged or faulty.")
