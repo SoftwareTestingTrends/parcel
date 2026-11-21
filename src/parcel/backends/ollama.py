@@ -59,6 +59,7 @@ class OllamaSession:
     def send(self, text: str) -> TurnResult:
         self.messages.append({"role": "user", "content": text})
         result = TurnResult(text="")
+        said = ""
         for _ in range(MAX_TOOL_ROUNDS):
             data = self._chat()
             message = data["message"]
@@ -71,9 +72,14 @@ class OllamaSession:
             self.messages.append(
                 {k: message[k] for k in ("role", "content", "tool_calls") if k in message}
             )
+            text = message.get("content", "").strip()
+            if text:
+                # Models often write the customer's reply alongside a tool call and then send
+                # an empty final message, so keep the last thing the model actually said.
+                said = text
             calls = message.get("tool_calls") or []
             if not calls:
-                result.text = message.get("content", "").strip()
+                result.text = said
                 result.stop_reason = data.get("done_reason", "stop")
                 return result
             for call in calls:

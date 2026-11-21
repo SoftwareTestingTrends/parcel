@@ -31,6 +31,7 @@ class ApiSession:
     def send(self, text: str) -> TurnResult:
         self.messages.append({"role": "user", "content": text})
         result = TurnResult(text="")
+        said = ""
         for _ in range(MAX_TOOL_ROUNDS):
             response = self._create()
             usage = {
@@ -43,6 +44,11 @@ class ApiSession:
                 result.usage[key] = result.usage.get(key, 0) + value
             # Keep the whole content (thinking blocks included) so the next request is valid.
             self.messages.append({"role": "assistant", "content": response.content})
+            text = "".join(b.text for b in response.content if b.type == "text").strip()
+            if text:
+                # Claude can write the customer's reply alongside a tool call and then send
+                # an empty final message, so keep the last thing the model actually said.
+                said = text
 
             if response.stop_reason == "refusal":
                 result.text = "Sorry, I can't help with that here. Let me pass you to a person."
@@ -50,7 +56,7 @@ class ApiSession:
                 break
             tool_uses = [b for b in response.content if b.type == "tool_use"]
             if response.stop_reason != "tool_use" or not tool_uses:
-                result.text = "".join(b.text for b in response.content if b.type == "text").strip()
+                result.text = said
                 result.stop_reason = response.stop_reason
                 break
             results = []
