@@ -47,7 +47,7 @@ def test_transcript_records_backend_prompt_and_events():
     parcel = Parcel(MOCK)
     parcel.ask("Do you price match?")
     data = parcel.transcript.to_dict()
-    assert data["backend"] == "mock" and data["prompt_version"] == "v1"
+    assert data["backend"] == "mock" and data["prompt_version"] == "v2"
     assert [e["type"] for e in data["events"]] == ["customer", "retrieval", "parcel"]
 
 
