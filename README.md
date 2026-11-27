@@ -40,6 +40,10 @@ PARCEL_BACKEND=api PARCEL_MODEL=claude-sonnet-5-5 uv run parcel chat
 
 A conversation can have several messages: `parcel ask "first message" "second message"`. Add `--json` to see the whole transcript.
 
+**Before you rely on `claude-code` results:** Claude Code adds its own context to every conversation, including your account's email address and today's date, and Parcel can't switch that off. Claude models sometimes treat that email as the customer's: they look orders up with it, or refuse because "the email doesn't match the account on this chat". Parcel's tools and the conversation are otherwise isolated from your Claude Code setup (no CLAUDE.md, settings, plugins or built-in tools). For evals, model comparisons and anything you'll publish, use the `api` backend, which sends only Parcel's own prompt, tools and messages.
+
+The `api` backend uses the Anthropic SDK, so it also works through an Anthropic-compatible gateway: set `ANTHROPIC_BASE_URL` and that gateway's key and model id, for example `ANTHROPIC_BASE_URL=https://openrouter.ai/api` with `PARCEL_MODEL=anthropic/claude-haiku-5.5`. Cost estimates only cover Anthropic model ids, so a gateway's runs record no cost.
+
 ## Traces
 
 Every conversation is saved as one line of JSON in `traces/<date>.jsonl` (turn this off with `--no-trace`). A trace holds:

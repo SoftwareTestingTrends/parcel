@@ -36,3 +36,24 @@ def test_reply_written_alongside_a_tool_call_is_kept():
 
     assert result.text == "I'm so sorry. I'm passing you to a person who can help."
     assert [h["reason"] for h in store.hand_offs] == ["safety_or_legal"]
+
+
+def test_claude_code_sessions_ignore_your_own_claude_code_setup():
+    # Found while comparing models for the course: lazily loaded tools hid Parcel's tools from the
+    # model, and plugins from the developer's own setup blocked Parcel's tool calls.
+    from parcel.backends.claude_code import ClaudeCodeSession
+
+    session = ClaudeCodeSession(
+        Settings(backend="claude-code"), OrderStore.seeded(), "system prompt"
+    )
+    options = session._options()
+
+    assert options.env["ENABLE_TOOL_SEARCH"] == "false"
+    assert options.env["CLAUDE_CODE_PLUGIN_DIRS"] == ""
+    assert options.setting_sources == []
+    assert options.tools == []
+    assert sorted(options.allowed_tools) == [
+        "mcp__parcel__hand_off",
+        "mcp__parcel__issue_refund",
+        "mcp__parcel__lookup_order",
+    ]

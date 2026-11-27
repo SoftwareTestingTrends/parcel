@@ -1,6 +1,11 @@
 """Claude through your local Claude Code login, using the Claude Agent SDK.
 No API key needed. Claude Code's own tools (files, shell, web) are switched off;
-the model sees only Parcel's three tools."""
+the model sees only Parcel's three tools.
+
+One thing Parcel can't switch off: Claude Code adds its own context to every conversation,
+including your account's email address and today's date. A model can treat that email as the
+customer's ("the email doesn't match the account on this chat"). Use the api backend when you
+compare models or record results you'll rely on."""
 
 import asyncio
 import tempfile
@@ -20,6 +25,18 @@ from ..transcript import ToolCall, TurnResult
 
 SERVER = "parcel"
 MAX_TURNS = 10
+
+# Environment for the Claude Code process behind each conversation. Without these, your own
+# Claude Code setup leaks into Parcel (found while comparing models for the course):
+# - Claude Code can load MCP tools lazily, behind a tool-search tool. Parcel switches the built-in
+#   tools off, so the model never saw lookup_order, issue_refund or hand_off and wrote replies
+#   about "errors" instead of calling them.
+# - Plugins listed in CLAUDE_CODE_PLUGIN_DIRS (in your shell or your Claude Code settings) still
+#   load, and their hooks can block Parcel's tool calls.
+ISOLATED_ENV = {
+    "ENABLE_TOOL_SEARCH": "false",
+    "CLAUDE_CODE_PLUGIN_DIRS": "",
+}
 
 
 class ClaudeCodeSession:
@@ -53,6 +70,7 @@ class ClaudeCodeSession:
             tools=[],  # no built-in Claude Code tools
             allowed_tools=[f"mcp__{SERVER}__{t['name']}" for t in TOOLS],
             setting_sources=[],  # don't load your CLAUDE.md or settings
+            env=dict(ISOLATED_ENV),  # see ISOLATED_ENV above
             max_turns=MAX_TURNS,
             resume=self.session_id,
             cwd=self._workdir,
