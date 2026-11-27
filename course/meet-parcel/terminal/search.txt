@@ -1,0 +1,16 @@
+14 articles: KB-101 Delivery options and costs, KB-102 Tracking your order, KB-103 Late or missing parcels, KB-104 Returning an item, KB-105 Refunds, KB-106 Damaged or faulty items, KB-107 Cancelling an order, KB-108 Changing your delivery address, KB-109 Items we can't take back, KB-110 Payments, KB-111 Gift cards, KB-112 Talking to a person, KB-113 Delivering outside the UK, KB-114 Prices and promotions
+
+search('How long does a refund take?'):
+  KB-104   3.53  Returning an item
+  KB-105   1.71  Refunds
+  KB-103   1.04  Late or missing parcels
+
+search('When will I get my money back?'):
+  KB-109   2.09  Items we can't take back
+  KB-111   1.34  Gift cards
+  KB-104   1.15  Returning an item
+
+search('Do you deliver to Spain?'):
+  KB-113   4.67  Delivering outside the UK
+  KB-102   1.70  Tracking your order
+  KB-103   1.61  Late or missing parcels

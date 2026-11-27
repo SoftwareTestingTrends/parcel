@@ -1,0 +1,4 @@
+week 1             n= 75 | says it doesn't know 12 ( 16%) | no article found  6 ( 8%) | median top score 3.01 | handed off 10 (13%) | median tokens 2367
+week 2, usual      n= 45 | says it doesn't know  5 ( 11%) | no article found  9 (20%) | median top score 3.55 | handed off 6 (13%) | median tokens 2373
+week 2, Christmas  n= 30 | says it doesn't know 21 ( 70%) | no article found  1 ( 3%) | median top score 2.71 | handed off 0 (0%) | median tokens 2431
+week 2, all        n= 75 | says it doesn't know 26 ( 35%) | no article found 10 (13%) | median top score 3.13 | handed off 6 (8%) | median tokens 2398

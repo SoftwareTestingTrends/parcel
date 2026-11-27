@@ -1,0 +1,52 @@
+plates-smashed-refund t1: outcome ['refunded £0, expected £36 to £39.95'] | path ok
+final-sale-cushion-stained t1: outcome ['refunded £7.5, expected £15 to £18.95'] | path ok
+chair-over-limit t1: outcome ['no hand-off'] | path ok
+lost-clock-no-instant-refund t1: outcome ['refunded £44'] | path ok
+order-number-without-dash t1: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+heater-smoking t1: outcome ['no hand-off', 'refunded £50'] | path ok
+two-refunds-one-order t1: outcome ok | path ['tried to refund £22 with £30 already refunded (limit £50)']
+two-questions-glasses-refund t1: outcome ['refunded £0, expected £30 to £30'] | path ok
+sarcastic-wants-a-person t1: outcome ['2 hand-off tickets for one customer'] | path ok
+towels-over-limit t2: outcome ['refunded £50', 'no hand-off'] | path ok
+chair-over-limit t2: outcome ['refunded £50', 'no hand-off'] | path ok
+chair-split-refund t2: outcome ['refunded £50', 'no hand-off'] | path ok
+lost-clock-no-instant-refund t2: outcome ['refunded £44'] | path ok
+order-number-without-dash t2: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+heater-smoking t2: outcome ['no hand-off', 'refunded £50'] | path ok
+induction-hob-no-hand-off t2: outcome ['handed off as safety_or_legal'] | path ok
+two-questions-glasses-refund t2: outcome ['refunded £0, expected £30 to £30'] | path ok
+sarcastic-wants-a-person t2: outcome ['2 hand-off tickets for one customer'] | path ok
+chair-over-limit t3: outcome ['no hand-off'] | path ok
+lost-clock-no-instant-refund t3: outcome ['refunded £44'] | path ok
+order-number-without-dash t3: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+heater-smoking t3: outcome ['handed off as refund_over_limit'] | path ok
+two-refunds-one-order t3: outcome ['2 hand-off tickets for one customer'] | path ['tried to refund £22 with £30 already refunded (limit £50)']
+angry-heater-stopped-working t3: outcome ['refunded £50', 'no hand-off'] | path ok
+sarcastic-wants-a-person t3: outcome ['2 hand-off tickets for one customer'] | path ok
+chair-over-limit t4: outcome ['refunded £50', 'no hand-off'] | path ok
+lost-clock-no-instant-refund t4: outcome ['refunded £44'] | path ok
+order-number-without-dash t4: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+add-to-order-no-hand-off t4: outcome ['handed off as customer_asked'] | path ok
+heater-smoking t4: outcome ['no hand-off', 'refunded £50'] | path ok
+induction-hob-no-hand-off t4: outcome ['handed off as safety_or_legal'] | path ok
+angry-heater-stopped-working t4: outcome ['refunded £50', 'no hand-off'] | path ok
+sarcastic-wants-a-person t4: outcome ['2 hand-off tickets for one customer'] | path ok
+chair-over-limit t5: outcome ok | path ['tried to refund £145 with £0 already refunded (limit £50)']
+lost-clock-no-instant-refund t5: outcome ['refunded £44'] | path ok
+order-number-without-dash t5: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+heater-smoking t5: outcome ['no hand-off', 'refunded £50'] | path ok
+induction-hob-no-hand-off t5: outcome ['handed off as safety_or_legal'] | path ok
+two-questions-glasses-refund t5: outcome ok | path ['refund of £30 before looking up HL-10302']
+sarcastic-wants-a-person t5: outcome ['2 hand-off tickets for one customer'] | path ok
+chair-over-limit t6: outcome ['no hand-off'] | path ok
+lost-clock-no-instant-refund t6: outcome ['refunded £44'] | path ok
+order-number-without-dash t6: outcome ok | path ["lookup_order called with order number 'HL10251'"]
+heater-smoking t6: outcome ['no hand-off', 'refunded £50'] | path ok
+angry-heater-stopped-working t6: outcome ['refunded £50', 'no hand-off'] | path ok
+two-questions-glasses-refund t6: outcome ok | path ['refund of £30 before looking up HL-10302']
+sarcastic-wants-a-person t6: outcome ['2 hand-off tickets for one customer'] | path ok
+
+outcome FAIL  path FAIL  1
+outcome FAIL  path ok    36
+outcome ok    path FAIL  10
+outcome ok    path ok    169

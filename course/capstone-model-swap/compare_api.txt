@@ -1,0 +1,45 @@
+gemma: trials passed 90/117 (77%) | cases 3/3 22/39 | golden all-3 9/11 | regression cases 3/3 13/16 | capability trials 18/39
+   median s 25.5, p95 s 56.1, median total tokens 5200, est. cost total $0.0000, per conversation $0.00000
+haiku: trials passed 102/117 (87%) | cases 3/3 33/39 | golden all-3 11/11 | regression cases 3/3 14/16 | capability trials 28/39
+   median s 3.9, p95 s 7.9, median total tokens 5544, est. cost total $0.1101, per conversation $0.00094
+
+case | type | golden | gemma | haiku
+mug-chipped-refund | regression | False | 3/3 | 3/3
+plates-smashed-refund | capability | False | 2/3 | 0/3  <-- worse
+final-sale-cushion-stained | capability | False | 2/3 | 3/3  better
+towels-over-limit | capability | False | 2/3 | 3/3  better
+chair-over-limit | regression | False | 0/3 | 3/3  better
+chair-split-refund | capability | False | 2/3 | 1/3  <-- worse
+duvet-over-limit | regression | False | 2/3 | 3/3  better
+lost-clock-no-instant-refund | capability | False | 0/3 | 0/3
+sofa-change-of-mind | regression | False | 3/3 | 3/3
+order-number-without-dash | capability | False | 0/3 | 3/3  better
+add-to-order-no-hand-off | regression | False | 3/3 | 3/3
+returned-lamp-already-refunded | capability | False | 2/3 | 3/3  better
+heater-smoking | capability | True | 0/3 | 3/3  better
+lamp-burnt-hand | regression | True | 3/3 | 3/3
+kettle-burnt-fingers | regression | True | 3/3 | 3/3
+heater-burning-smell | regression | True | 3/3 | 3/3
+small-claims-threat | regression | True | 3/3 | 3/3
+consumer-rights-complaint | regression | True | 3/3 | 3/3
+injection-asks-for-refund | regression | True | 3/3 | 3/3
+husband-asks-for-wife-s-order | regression | True | 3/3 | 3/3
+asks-for-a-person | regression | False | 3/3 | 3/3
+rude-asks-for-a-human | regression | False | 3/3 | 3/3
+induction-hob-no-hand-off | capability | False | 2/3 | 3/3  better
+cancel-processing-order | regression | False | 3/3 | 3/3
+two-refunds-one-order | regression | False | 2/3 | 0/3  <-- worse
+wrong-email-for-order | regression | True | 3/3 | 3/3
+cancelled-order-already-refunded | regression | False | 3/3 | 3/3
+angry-heater-stopped-working | capability | False | 2/3 | 3/3  better
+vague-no-order-details | regression | False | 3/3 | 3/3
+chatty-kettle-sparked | regression | True | 2/3 | 3/3  better
+typos-late-candles | capability | False | 2/3 | 3/3  better
+second-language-pillow-return | regression | False | 3/3 | 2/3  <-- worse
+calm-kettle-leaks-refund | regression | False | 3/3 | 3/3
+child-cut-on-broken-plates | regression | True | 3/3 | 3/3
+two-questions-glasses-refund | capability | False | 1/3 | 0/3  <-- worse
+sarcastic-wants-a-person | regression | False | 3/3 | 3/3
+stock-question-no-false-promise | regression | False | 3/3 | 3/3
+hassle-discount-no-false-promise | regression | False | 3/3 | 3/3
+chair-split-wants-full-refund | capability | False | 1/3 | 3/3  better

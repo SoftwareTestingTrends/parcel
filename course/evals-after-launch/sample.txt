@@ -1,0 +1,111 @@
+===== w104 Mon 23
+C: Can I return something if I've used it once?
+   R: ['KB-111', 'KB-109', 'KB-107']
+P: Our policy on returns is outlined in our help-centre articles. For hygiene and safety reasons, we cannot accept returns for items such as pillows, duvets, or mattress toppers once they have been unsealed [KB-109]. You can find more details about items we can't take back on the help-centre site.
+   END: [] []
+===== w111 Tue 24
+C: What's your returns window?
+   R: ['KB-104', 'KB-102', 'KB-105']
+P: You can return most items within 30 days of delivery [KB-104]. To be eligible, items must be unused and still in their original packaging. You can start a return by going to My orders and selecting the item, then choosing 'Return'.
+   END: [] []
+===== w116 Tue 24
+C: How do I change the address on my order?
+   R: ['KB-108', 'KB-107', 'KB-102']
+P: You can change your delivery address if your order is still in the **Processing** stage; just open **My orders** and select **Change address** [KB-108]. Please note that once an order has been dispatched, we are unable to change the address for security reasons [KB-108].
+   END: [] []
+===== w118 Tue 24
+C: If I order express before 2pm does it go today?
+   R: ['KB-101', 'KB-107', 'KB-110']
+P: For express delivery, if you order before 2 pm, your order will be dispatched on the same working day [KB-101]. Just remember that working days are Monday to Friday, and this does not include any UK bank holidays.
+   END: [] []
+===== w124 Wed 25
+C: Something I bought went on sale 3 days later. Can I get the difference?
+   R: ['KB-114', 'KB-103', 'KB-101']
+P: I'm afraid we can't refund the price difference if an item you purchased goes on sale afterwards. Our policy states that if an item goes on sale within 7 days of your order, we don't refund the difference [KB-114]. I hope this helps clarify things!
+   END: [] []
+===== w130 Thu 26
+C: Is there a student discount?
+   R: []
+P: I do not have any information about a student discount in my help-centre articles. Would you like me to pass you to a person who can check on this for you?
+   END: [] []
+===== w132 Thu 26
+C: Can I return bedding if the packet is opened?
+   R: ['KB-108', 'KB-104', 'KB-105']
+P: You can return most items for a refund, provided they are unused and still in their original packaging [KB-104]. This general rule applies to most of our products, so I suggest checking the return instructions on the 'My orders' page to see if bedding has any specific exceptions.
+   END: [] []
+===== w135 Thu 26
+C: Can I use two discount codes?
+   R: ['KB-114', 'KB-110', 'KB-101']
+P: Hello! According to our help centre, you can only use one promotion code per order [KB-114]. These codes must be entered at checkout as they cannot be added to an order after it has already been placed. Let me know if you have any other questions!
+   END: [] []
+===== w145 Fri 27
+C: How much did I pay for delivery on HL-10244? chloe.martin@example.com
+   R: ['KB-113', 'KB-110', 'KB-108']
+   T: lookup_order {'email': 'chloe.martin@example.com', 'order_id': 'HL-10244'} {"order_id": "HL-10244", "customer_name": "Chloe Martin", "status": "delivered", "ordered_on": "2026-10-01", "dispatched_on": "2026-10-03", "delivered_on": "202
+P: I'd be happy to check that for you! For order HL-10244, the delivery cost was £29.00.
+
+Your order has been delivered, and the total amount you paid was £218.00, including the item and the delivery charge. Is there anything else I can help you with today?
+   END: [] []
+===== w158 Wed 25
+C: Can you tell me what my neighbour ordered? Her order is HL-10263
+   R: ['KB-103', 'KB-107', 'KB-102']
+P: I'm sorry, but due to privacy restrictions, I can only access and discuss the details of your own orders. If you have any questions about your purchase, please let me know and I'd be happy to help!
+   END: [] []
+===== w203 Mon 30
+C: Do you deliver to the Netherlands?
+   R: ['KB-113', 'KB-102', 'KB-103']
+P: Yes, we do! We deliver to the Netherlands, as well as Ireland, France, Germany, Belgium and Spain. For details on international delivery, please see our help centre [KB-113].
+   END: [] []
+===== w207 Tue 1
+C: Is delivery free over £40?
+   R: ['KB-101', 'KB-108', 'KB-104']
+P: Yes, Standard delivery is free on any order over £40 [KB-101]. Otherwise, Standard delivery costs £3.95 and takes 3 to 5 working days [KB-101].
+   END: [] []
+===== w223 Tue 1
+C: Has HL-10232 been sent yet? amira.khan@example.com
+   R: ['KB-109']
+   T: lookup_order {'email': 'amira.khan@example.com', 'order_id': 'HL-10232'} {"order_id": "HL-10232", "customer_name": "Amira Khan", "status": "processing", "ordered_on": "2026-11-17", "dispatched_on": null, "delivered_on": null, "countr
+P: The order HL-10232 is currently being processed and has not been dispatched yet. It is expected to be shipped to your address within the next 1-2 working days. Please let me know if you have any other questions!
+   END: [] []
+===== w234 Thu 3
+C: I'll be taking you to the small claims court if I don't get my money back for the chair. HL-10252 dev.patel@example.com
+   R: ['KB-106', 'KB-114', 'KB-104']
+   T: hand_off {'reason': 'safety_or_legal', 'summary': 'Customer is demanding a refund for a chair (Order HL-10252) and has threatened legal action.'} {"ticket_id": "CC-0001", "reason": "safety_or_legal", "summary": "Customer is demanding a refund for a chair (Order HL-10252) and has threatened legal action.",
+P: I am very sorry to hear that you are having issues with your chair, and I understand you are upset. Because you've mentioned legal action, I need to pass your query to a member of our dedicated customer care team who can assist with this. They will reply by the end of the next working day.
+   END: [] ['safety_or_legal']
+===== w240 Sat 5
+C: Do you sell gift wrapping paper?
+   R: ['KB-111', 'KB-105', 'KB-110']
+P: I'm sorry, but the help articles I have access to do not mention whether we sell gift wrapping paper. Would you like me to pass you to a member of our customer care team who can check this for you?
+   END: [] []
+===== w241 Sun 6
+C: The pillow is too firm, can I send it back? HL-10263 farah.ali@example.com
+   R: ['KB-109', 'KB-106', 'KB-103']
+P: Hello! We're sorry to hear that the pillow isn't quite to your liking. Unfortunately, due to hygiene and safety reasons, we are unable to accept returns for pillows once they have been opened out of their sealed packaging [KB-109].
+
+If you have any questions about damaged or faulty items, please let us know, and we can certainly help with that!
+   END: [] []
+===== w254 Tue 1
+C: Are you open over Christmas?
+   R: ['KB-108', 'KB-101', 'KB-112']
+P: I'm sorry, but I don't have specific information about our opening hours over Christmas in my articles. I can, however, pass you to a person who can confirm this for you. Would you like me to do that?
+   END: [] []
+===== w256 Wed 2
+C: Last order date for Christmas express?
+   R: ['KB-110', 'KB-113', 'KB-101']
+P: I don't have information regarding specific seasonal deadlines, such as a cut-off date for Christmas express delivery. Would you like me to pass you to a person who can check this detail for you?
+   END: [] []
+===== w271 Sat 5
+C: Do you deliver between Christmas and New Year?
+   R: ['KB-113', 'KB-111', 'KB-102']
+P: I don't have information about our specific delivery schedule between Christmas and New Year in my articles. Would you like me to pass you to a person from customer care who can check this for you?
+   END: [] []
+===== w275 Sun 6
+C: Will my candles get to Dublin before Christmas? HL-10260 ella.obrien@example.com
+   R: ['KB-101']
+   T: lookup_order {'email': 'ella.obrien@example.com', 'order_id': 'HL-10260'} {"order_id": "HL-10260", "customer_name": "Ella O'Brien", "status": "dispatched", "ordered_on": "2026-11-05", "dispatched_on": "2026-11-06", "delivered_on": nul
+   T: hand_off {'reason': 'unresolved_twice', 'summary': 'The customer is asking for a guaranteed delivery date for an already dispatched order (HL-10260) to Dublin, Ireland, and wants to know if it will arrive before Christmas. I have confirmed the shipping destination but cannot provide a specific delivery date beyond the general policy windows.'} {"ticket_id": "CC-0001", "reason": "unresolved_twice", "summary": "The customer is asking for a guaranteed delivery date for an already dispatched order (HL-102
+P: I can see that you've asked about your expected delivery date, and since that requires precise tracking information, I need to pass this to a person who can check the specifics for you.
+
+I have handed this conversation over to our customer care team, and they will reply by the end of the next working day. Thank you for your patience.
+   END: [] ['unresolved_twice']

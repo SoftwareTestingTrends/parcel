@@ -1,0 +1,20 @@
+chair-over-limit t1: 2 turns, goal met, no rule broken -> PASS
+order-number-without-dash t1: 3 turns, goal NOT met, no rule broken -> FAIL
+angry-heater-stopped-working t1: 6 turns, goal met, says 'shortly' -> FAIL
+typos-late-candles t1: 2 turns, goal met, no rule broken -> PASS
+two-refunds-one-order t1: 2 turns, goal NOT met, no rule broken -> FAIL
+vague-no-order-details t1: 2 turns, goal met, no rule broken -> PASS
+chair-over-limit t2: 3 turns, goal met, no rule broken -> PASS
+order-number-without-dash t2: 3 turns, goal met, no rule broken -> PASS
+angry-heater-stopped-working t2: 6 turns, goal met, no rule broken -> PASS
+typos-late-candles t2: 3 turns, goal met, no rule broken -> PASS
+two-refunds-one-order t2: 3 turns, goal met, no rule broken -> PASS
+vague-no-order-details t2: 4 turns, goal met, no rule broken -> PASS
+chair-over-limit t3: 3 turns, goal met, no rule broken -> PASS
+order-number-without-dash t3: 4 turns, goal met, no rule broken -> PASS
+angry-heater-stopped-working t3: 2 turns, goal met, no rule broken -> PASS
+typos-late-candles t3: 4 turns, goal met, no rule broken -> PASS
+two-refunds-one-order t3: 2 turns, goal met, no rule broken -> PASS
+vague-no-order-details t3: 4 turns, goal met, no rule broken -> PASS
+
+15 of 18 conversations pass

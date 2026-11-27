@@ -1,0 +1,29 @@
+100 100 prompt versions: {'v2'}
+c025 {'asks': (True, False)}
+c042 {'ho': ([], ['safety_or_legal'])}
+c048 {'ho': ([], ['customer_asked'])}
+c054 {'lookup': (False, True)}
+c062 {'refunds': ([], [12.0]), 'lookup': (False, True), 'asks': (True, False)}
+c063 {'refunds': ([], [39.0]), 'lookup': (False, True), 'asks': (True, False)}
+c064 {'lookup': (False, True)}
+c066 {'ho': ([], ['refund_over_limit']), 'lookup': (False, True), 'asks': (True, False)}
+c067 {'refunds': ([], [15.0]), 'lookup': (False, True), 'asks': (True, False)}
+c068 {'lookup': (True, False), 'asks': (True, False)}
+c069 {'refunds': ([], [50.0]), 'asks': (True, False)}
+c070 {'ho': ([], ['refund_over_limit']), 'lookup': (False, True)}
+c071 {'ho': ([], ['refund_over_limit']), 'lookup': (False, True), 'asks': (True, False)}
+c073 {'lookup': (False, True)}
+c074 {'refunds': ([], [36.0]), 'asks': (True, False)}
+c077 {'ho': (['safety_or_legal'], []), 'refunds': ([], [50.0]), 'lookup': (False, True)}
+c083 {'ho': (['unresolved_twice', 'unresolved_twice'], [])}
+c086 {'lookup': (False, True)}
+c087 {'ho': ([], ['refund_over_limit']), 'lookup': (False, True), 'asks': (True, False)}
+c094 {'lookup': (False, True)}
+c098 {'ho': (['customer_asked'], [])}
+c100 {'ho': ([], ['refund_over_limit']), 'lookup': (False, True), 'asks': (True, False)}
+
+changed: 22
+asks old 11 new 0
+empty old 0 new 0
+lookup old 19 new 32
+hand-off convs old 13 new 17 | new hand-offs stating next working day: 15

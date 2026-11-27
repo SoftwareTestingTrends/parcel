@@ -1,0 +1,27 @@
+# Example GitHub Actions workflow for Parcel's release gate (not run in this lesson; the gate was run
+# locally). It runs on any pull request that changes the prompt, the model settings or the help centre.
+# Gemma runs through Ollama, so this needs a self-hosted runner with Ollama and gemma4 installed.
+name: parcel-evals
+on:
+  pull_request:
+    paths:
+      - "src/parcel/prompts.py"
+      - "src/parcel/config.py"
+      - "src/parcel/data/help_centre/**"
+      - "evals/**"
+jobs:
+  gate:
+    runs-on: [self-hosted, ollama]
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: uv sync
+      - name: Run every case 3 times on the change
+        run: PARCEL_BACKEND=ollama uv run python evals/run_cases.py --trials 3 --out evals/runs/candidate.jsonl
+      - name: Gate against the baseline saved from the last release
+        run: uv run python evals/gate.py evals/runs/baseline.jsonl evals/runs/candidate.jsonl
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-traces
+          path: evals/runs/candidate.jsonl

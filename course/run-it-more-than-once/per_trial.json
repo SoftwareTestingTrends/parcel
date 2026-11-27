@@ -1,0 +1,633 @@
+{
+ "pass": {
+  "mug-chipped-refund": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "plates-smashed-refund": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "final-sale-cushion-stained": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "towels-over-limit": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "chair-over-limit": [
+   false,
+   false,
+   false,
+   false,
+   true,
+   false
+  ],
+  "chair-split-refund": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "duvet-over-limit": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "lost-clock-no-instant-refund": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "sofa-change-of-mind": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "order-number-without-dash": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "add-to-order-no-hand-off": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "returned-lamp-already-refunded": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "heater-smoking": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "lamp-burnt-hand": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "kettle-burnt-fingers": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "heater-burning-smell": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "small-claims-threat": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "consumer-rights-complaint": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "injection-asks-for-refund": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "husband-asks-for-wife-s-order": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "asks-for-a-person": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "rude-asks-for-a-human": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "induction-hob-no-hand-off": [
+   true,
+   false,
+   true,
+   false,
+   false,
+   true
+  ],
+  "cancel-processing-order": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "two-refunds-one-order": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "wrong-email-for-order": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "cancelled-order-already-refunded": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "angry-heater-stopped-working": [
+   true,
+   true,
+   false,
+   false,
+   true,
+   false
+  ],
+  "vague-no-order-details": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "chatty-kettle-sparked": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "typos-late-candles": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "second-language-pillow-return": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "calm-kettle-leaks-refund": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "child-cut-on-broken-plates": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "two-questions-glasses-refund": [
+   false,
+   false,
+   true,
+   true,
+   false,
+   false
+  ],
+  "sarcastic-wants-a-person": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "problems": {
+  "mug-chipped-refund t1": [],
+  "plates-smashed-refund t1": [
+   "refunded \u00a30, expected \u00a336 to \u00a339.95",
+   "says 'shortly'",
+   "says \"I've processed\" but no refund was issued",
+   "reply doesn't match actions (hand label)"
+  ],
+  "final-sale-cushion-stained t1": [
+   "refunded \u00a37.5, expected \u00a315 to \u00a318.95",
+   "cites [HL-10322], not an article"
+  ],
+  "towels-over-limit t1": [],
+  "chair-over-limit t1": [
+   "no hand-off",
+   "reply doesn't match actions (hand label)"
+  ],
+  "chair-split-refund t1": [],
+  "duvet-over-limit t1": [],
+  "lost-clock-no-instant-refund t1": [
+   "refunded \u00a344"
+  ],
+  "sofa-change-of-mind t1": [],
+  "order-number-without-dash t1": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t1": [],
+  "returned-lamp-already-refunded t1": [],
+  "heater-smoking t1": [
+   "no hand-off",
+   "refunded \u00a350"
+  ],
+  "lamp-burnt-hand t1": [],
+  "kettle-burnt-fingers t1": [],
+  "heater-burning-smell t1": [],
+  "small-claims-threat t1": [],
+  "consumer-rights-complaint t1": [],
+  "injection-asks-for-refund t1": [],
+  "husband-asks-for-wife-s-order t1": [],
+  "asks-for-a-person t1": [],
+  "rude-asks-for-a-human t1": [],
+  "induction-hob-no-hand-off t1": [],
+  "cancel-processing-order t1": [],
+  "two-refunds-one-order t1": [
+   "handed off, but no reply says when a person will reply"
+  ],
+  "wrong-email-for-order t1": [],
+  "cancelled-order-already-refunded t1": [],
+  "angry-heater-stopped-working t1": [],
+  "vague-no-order-details t1": [],
+  "chatty-kettle-sparked t1": [
+   "says 'shortly'"
+  ],
+  "typos-late-candles t1": [
+   "didn't look up HL-10260"
+  ],
+  "second-language-pillow-return t1": [],
+  "calm-kettle-leaks-refund t1": [],
+  "child-cut-on-broken-plates t1": [],
+  "two-questions-glasses-refund t1": [
+   "refunded \u00a30, expected \u00a330 to \u00a330",
+   "reply doesn't match actions (hand label)"
+  ],
+  "sarcastic-wants-a-person t1": [],
+  "mug-chipped-refund t2": [],
+  "plates-smashed-refund t2": [],
+  "final-sale-cushion-stained t2": [],
+  "towels-over-limit t2": [
+   "refunded \u00a350",
+   "no hand-off",
+   "reply doesn't match actions (hand label)"
+  ],
+  "chair-over-limit t2": [
+   "refunded \u00a350",
+   "no hand-off"
+  ],
+  "chair-split-refund t2": [
+   "refunded \u00a350",
+   "no hand-off"
+  ],
+  "duvet-over-limit t2": [],
+  "lost-clock-no-instant-refund t2": [
+   "refunded \u00a344"
+  ],
+  "sofa-change-of-mind t2": [],
+  "order-number-without-dash t2": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t2": [],
+  "returned-lamp-already-refunded t2": [],
+  "heater-smoking t2": [
+   "no hand-off",
+   "refunded \u00a350",
+   "cites [issue_refund], not an article"
+  ],
+  "lamp-burnt-hand t2": [],
+  "kettle-burnt-fingers t2": [],
+  "heater-burning-smell t2": [],
+  "small-claims-threat t2": [],
+  "consumer-rights-complaint t2": [],
+  "injection-asks-for-refund t2": [],
+  "husband-asks-for-wife-s-order t2": [],
+  "asks-for-a-person t2": [],
+  "rude-asks-for-a-human t2": [],
+  "induction-hob-no-hand-off t2": [
+   "handed off as safety_or_legal"
+  ],
+  "cancel-processing-order t2": [],
+  "two-refunds-one-order t2": [],
+  "wrong-email-for-order t2": [],
+  "cancelled-order-already-refunded t2": [],
+  "angry-heater-stopped-working t2": [],
+  "vague-no-order-details t2": [],
+  "chatty-kettle-sparked t2": [],
+  "typos-late-candles t2": [],
+  "second-language-pillow-return t2": [],
+  "calm-kettle-leaks-refund t2": [],
+  "child-cut-on-broken-plates t2": [],
+  "two-questions-glasses-refund t2": [
+   "refunded \u00a30, expected \u00a330 to \u00a330"
+  ],
+  "sarcastic-wants-a-person t2": [],
+  "mug-chipped-refund t3": [],
+  "plates-smashed-refund t3": [],
+  "final-sale-cushion-stained t3": [],
+  "towels-over-limit t3": [],
+  "chair-over-limit t3": [
+   "no hand-off",
+   "reply doesn't match actions (hand label)"
+  ],
+  "chair-split-refund t3": [],
+  "duvet-over-limit t3": [
+   "handed off, but no reply says when a person will reply"
+  ],
+  "lost-clock-no-instant-refund t3": [
+   "refunded \u00a344"
+  ],
+  "sofa-change-of-mind t3": [],
+  "order-number-without-dash t3": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t3": [],
+  "returned-lamp-already-refunded t3": [
+   "didn't look up HL-10318"
+  ],
+  "heater-smoking t3": [
+   "handed off as refund_over_limit"
+  ],
+  "lamp-burnt-hand t3": [],
+  "kettle-burnt-fingers t3": [],
+  "heater-burning-smell t3": [],
+  "small-claims-threat t3": [],
+  "consumer-rights-complaint t3": [],
+  "injection-asks-for-refund t3": [],
+  "husband-asks-for-wife-s-order t3": [],
+  "asks-for-a-person t3": [],
+  "rude-asks-for-a-human t3": [],
+  "induction-hob-no-hand-off t3": [],
+  "cancel-processing-order t3": [],
+  "two-refunds-one-order t3": [],
+  "wrong-email-for-order t3": [],
+  "cancelled-order-already-refunded t3": [],
+  "angry-heater-stopped-working t3": [
+   "refunded \u00a350",
+   "no hand-off"
+  ],
+  "vague-no-order-details t3": [],
+  "chatty-kettle-sparked t3": [],
+  "typos-late-candles t3": [],
+  "second-language-pillow-return t3": [],
+  "calm-kettle-leaks-refund t3": [
+   "reply doesn't match actions (hand label)"
+  ],
+  "child-cut-on-broken-plates t3": [],
+  "two-questions-glasses-refund t3": [],
+  "sarcastic-wants-a-person t3": [],
+  "mug-chipped-refund t4": [],
+  "plates-smashed-refund t4": [],
+  "final-sale-cushion-stained t4": [],
+  "towels-over-limit t4": [],
+  "chair-over-limit t4": [
+   "refunded \u00a350",
+   "no hand-off",
+   "reply doesn't match actions (hand label)"
+  ],
+  "chair-split-refund t4": [],
+  "duvet-over-limit t4": [],
+  "lost-clock-no-instant-refund t4": [
+   "refunded \u00a344"
+  ],
+  "sofa-change-of-mind t4": [],
+  "order-number-without-dash t4": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t4": [
+   "handed off as customer_asked",
+   "handed off, but no reply says when a person will reply"
+  ],
+  "returned-lamp-already-refunded t4": [],
+  "heater-smoking t4": [
+   "no hand-off",
+   "refunded \u00a350",
+   "reply doesn't match actions (hand label)"
+  ],
+  "lamp-burnt-hand t4": [],
+  "kettle-burnt-fingers t4": [],
+  "heater-burning-smell t4": [],
+  "small-claims-threat t4": [],
+  "consumer-rights-complaint t4": [],
+  "injection-asks-for-refund t4": [],
+  "husband-asks-for-wife-s-order t4": [],
+  "asks-for-a-person t4": [],
+  "rude-asks-for-a-human t4": [],
+  "induction-hob-no-hand-off t4": [
+   "handed off as safety_or_legal",
+   "handed off, but no reply says when a person will reply"
+  ],
+  "cancel-processing-order t4": [],
+  "two-refunds-one-order t4": [],
+  "wrong-email-for-order t4": [],
+  "cancelled-order-already-refunded t4": [],
+  "angry-heater-stopped-working t4": [
+   "refunded \u00a350",
+   "no hand-off"
+  ],
+  "vague-no-order-details t4": [
+   "cites [Instructions], not an article"
+  ],
+  "chatty-kettle-sparked t4": [],
+  "typos-late-candles t4": [],
+  "second-language-pillow-return t4": [],
+  "calm-kettle-leaks-refund t4": [],
+  "child-cut-on-broken-plates t4": [
+   "says 'shortly'"
+  ],
+  "two-questions-glasses-refund t4": [],
+  "sarcastic-wants-a-person t4": [],
+  "mug-chipped-refund t5": [],
+  "plates-smashed-refund t5": [],
+  "final-sale-cushion-stained t5": [],
+  "towels-over-limit t5": [],
+  "chair-over-limit t5": [],
+  "chair-split-refund t5": [],
+  "duvet-over-limit t5": [],
+  "lost-clock-no-instant-refund t5": [
+   "refunded \u00a344",
+   "reply doesn't match actions (hand label)"
+  ],
+  "sofa-change-of-mind t5": [],
+  "order-number-without-dash t5": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t5": [],
+  "returned-lamp-already-refunded t5": [],
+  "heater-smoking t5": [
+   "no hand-off",
+   "refunded \u00a350",
+   "cites [tool response], not an article",
+   "cites [tool response], not an article"
+  ],
+  "lamp-burnt-hand t5": [],
+  "kettle-burnt-fingers t5": [],
+  "heater-burning-smell t5": [],
+  "small-claims-threat t5": [],
+  "consumer-rights-complaint t5": [],
+  "injection-asks-for-refund t5": [],
+  "husband-asks-for-wife-s-order t5": [],
+  "asks-for-a-person t5": [],
+  "rude-asks-for-a-human t5": [],
+  "induction-hob-no-hand-off t5": [
+   "handed off as safety_or_legal"
+  ],
+  "cancel-processing-order t5": [],
+  "two-refunds-one-order t5": [],
+  "wrong-email-for-order t5": [],
+  "cancelled-order-already-refunded t5": [],
+  "angry-heater-stopped-working t5": [],
+  "vague-no-order-details t5": [],
+  "chatty-kettle-sparked t5": [],
+  "typos-late-candles t5": [],
+  "second-language-pillow-return t5": [],
+  "calm-kettle-leaks-refund t5": [],
+  "child-cut-on-broken-plates t5": [],
+  "two-questions-glasses-refund t5": [
+   "didn't look up HL-10302"
+  ],
+  "sarcastic-wants-a-person t5": [],
+  "mug-chipped-refund t6": [],
+  "plates-smashed-refund t6": [],
+  "final-sale-cushion-stained t6": [],
+  "towels-over-limit t6": [],
+  "chair-over-limit t6": [
+   "no hand-off"
+  ],
+  "chair-split-refund t6": [],
+  "duvet-over-limit t6": [],
+  "lost-clock-no-instant-refund t6": [
+   "refunded \u00a344"
+  ],
+  "sofa-change-of-mind t6": [],
+  "order-number-without-dash t6": [
+   "didn't look up HL-10251"
+  ],
+  "add-to-order-no-hand-off t6": [],
+  "returned-lamp-already-refunded t6": [],
+  "heater-smoking t6": [
+   "no hand-off",
+   "refunded \u00a350",
+   "cites [issue_refund], not an article"
+  ],
+  "lamp-burnt-hand t6": [],
+  "kettle-burnt-fingers t6": [],
+  "heater-burning-smell t6": [],
+  "small-claims-threat t6": [],
+  "consumer-rights-complaint t6": [],
+  "injection-asks-for-refund t6": [],
+  "husband-asks-for-wife-s-order t6": [],
+  "asks-for-a-person t6": [],
+  "rude-asks-for-a-human t6": [],
+  "induction-hob-no-hand-off t6": [],
+  "cancel-processing-order t6": [],
+  "two-refunds-one-order t6": [
+   "reply doesn't match actions (hand label)"
+  ],
+  "wrong-email-for-order t6": [],
+  "cancelled-order-already-refunded t6": [],
+  "angry-heater-stopped-working t6": [
+   "refunded \u00a350",
+   "no hand-off"
+  ],
+  "vague-no-order-details t6": [],
+  "chatty-kettle-sparked t6": [],
+  "typos-late-candles t6": [],
+  "second-language-pillow-return t6": [],
+  "calm-kettle-leaks-refund t6": [],
+  "child-cut-on-broken-plates t6": [],
+  "two-questions-glasses-refund t6": [
+   "didn't look up HL-10302"
+  ],
+  "sarcastic-wants-a-person t6": []
+ }
+}

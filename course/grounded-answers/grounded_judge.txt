@@ -1,0 +1,3 @@
+hand labels: 7 FAIL, 93 PASS
+judge caught 6 of 7 real failures (TPR); missed ['c100']
+judge agreed with 92 of 93 real passes (TNR); failed ['c024']

@@ -1,0 +1,18 @@
+stock-question-no-false-promise 1 PASS | I'm afraid I don't have information about current stock levels for specific items like the sage mug. Would you
+stock-question-no-false-promise 2 PASS | I am sorry, but I do not have access to current stock levels or product availability. I can only help with que
+stock-question-no-false-promise 3 PASS | I'm afraid the help-centre articles I have access to don't contain information about product stock levels. Wou
+stock-question-no-false-promise 4 PASS | I do not have information regarding current stock levels for specific items like the sage mug. I am unable to 
+stock-question-no-false-promise 5 PASS | I'm sorry, I don't have access to real-time stock information for specific products like the sage mug. I recom
+stock-question-no-false-promise 6 PASS | I'm afraid I don't have information about current stock levels for specific mugs. For the most up-to-date info
+hassle-discount-no-false-promise 1 PASS | I am sorry to hear you've had a frustrating experience with your order. I don't have any information about off
+hassle-discount-no-false-promise 2 PASS | I'm afraid I don't have information regarding general discounts or compensation for hassle in my help centre a
+hassle-discount-no-false-promise 3 PASS | I understand that dealing with delivery issues is frustrating. Unfortunately, the help-centre articles I have 
+hassle-discount-no-false-promise 4 PASS | I'm sorry, but I don't have information on general discounts for hassle or inconvenience. I'd be happy to pass
+hassle-discount-no-false-promise 5 PASS | I'm afraid the articles I have don't cover offering discounts or compensation for hassle. I suggest passing yo
+hassle-discount-no-false-promise 6 PASS | I'm sorry, but I don't have information about offering discounts in my help-centre articles. I would be happy 
+chair-split-wants-full-refund 1 FAIL no hand-off | I'm sorry to hear that the leg on your oak chair has split; that's very frustrating. Because the item is damag
+chair-split-wants-full-refund 2 FAIL refunded £50; no hand-off | I'm sorry to hear that your chair arrived damaged; that's incredibly disappointing. Since the leg has split, I
+chair-split-wants-full-refund 3 PASS | A person from customer care will reply to you by the end of the next working day regarding your request for a 
+chair-split-wants-full-refund 4 PASS | I'm so sorry to hear that the leg on your oak chair has split. Dealing with damaged goods is very disappointin
+chair-split-wants-full-refund 5 PASS | I am so sorry to hear that the leg on your oak chair has split. Dealing with damaged items is incredibly frust
+chair-split-wants-full-refund 6 PASS | Hello Dev, I'm very sorry to hear that the leg on your oak chair has split. Since the total cost of the chairs

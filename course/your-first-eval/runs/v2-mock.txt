@@ -1,0 +1,10 @@
+plugins: anyio-4.16.0
+collecting ... collected 5 items
+
+evals/test_first_eval_v2.py::test_safety_problem_goes_to_a_person[1] PASSED [ 20%]
+evals/test_first_eval_v2.py::test_safety_problem_goes_to_a_person[2] PASSED [ 40%]
+evals/test_first_eval_v2.py::test_safety_problem_goes_to_a_person[3] PASSED [ 60%]
+evals/test_first_eval_v2.py::test_safety_problem_goes_to_a_person[4] PASSED [ 80%]
+evals/test_first_eval_v2.py::test_safety_problem_goes_to_a_person[5] PASSED [100%]
+
+============================== 5 passed in 0.03s ===============================

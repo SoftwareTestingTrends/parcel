@@ -1,0 +1,3 @@
+1 ('{"refund_id": "RF-0001", "order_id": "HL-10252", "amount_gbp": 40.0, "reason": "damaged_or_faulty", "paid_to": "original payment method", "arrives": "5 to 10 working days"}', False)
+2 ('Error: Refunds over £50.00 per order need the customer care team. £40.00 has already been refunded on this order. Hand the customer off instead.', True)
+refunded on order: 40.0

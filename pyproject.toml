@@ -33,6 +33,7 @@ addopts = "-ra"
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+extend-exclude = ["course"]  # course files are teaching material, kept as recorded
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

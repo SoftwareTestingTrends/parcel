@@ -1,0 +1,98 @@
+{
+ "conversation": "cracked-chair",
+ "repeat": 1,
+ "parcel_version": "0.1.0",
+ "parcel_commit": "e42e346",
+ "recorded_at": "2026-11-19T22:12:35",
+ "backend": "claude-code",
+ "model": "claude-haiku-5-5",
+ "prompt_version": "v1",
+ "refund_guard": true,
+ "conversation_id": "1343ccdeff8c",
+ "started_at": 1795144345.398945,
+ "events": [
+  {
+   "type": "customer",
+   "text": "My order HL-10252 arrived with a cracked chair leg. Can I get my money back?"
+  },
+  {
+   "type": "retrieval",
+   "query": "My order HL-10252 arrived with a cracked chair leg. Can I get my money back?",
+   "articles": [
+    {
+     "id": "KB-106",
+     "title": "Damaged or faulty items",
+     "score": 2.706
+    },
+    {
+     "id": "KB-107",
+     "title": "Cancelling an order",
+     "score": 2.249
+    },
+    {
+     "id": "KB-109",
+     "title": "Items we can't take back",
+     "score": 2.2
+    }
+   ]
+  },
+  {
+   "type": "parcel",
+   "text": "I'm sorry your chair arrived cracked. To check order HL-10252, I'll need the email address on the order. Once I've confirmed it, I can look into a refund. Damage needs to be reported within 14 days of delivery, with a photo of the damage and the packaging [KB-106]. If you can send those too, please do.",
+   "stop_reason": "success"
+  },
+  {
+   "type": "customer",
+   "text": "dev.patel@example.com"
+  },
+  {
+   "type": "retrieval",
+   "query": "dev.patel@example.com",
+   "articles": []
+  },
+  {
+   "type": "tool_call",
+   "name": "lookup_order",
+   "args": {
+    "order_id": "HL-10252",
+    "email": "dev.patel@example.com"
+   },
+   "result": "{\"order_id\": \"HL-10252\", \"customer_name\": \"Dev Patel\", \"status\": \"delivered\", \"ordered_on\": \"2026-11-08\", \"dispatched_on\": \"2026-11-10\", \"delivered_on\": \"2026-11-15\", \"country\": \"GB\", \"payment_method\": \"card\", \"items\": [{\"sku\": \"CHR-03\", \"name\": \"Oak dining chair\", \"price\": 145.0, \"qty\": 2}], \"delivery_cost\": 29.0, \"total\": 319.0, \"already_refunded\": 0.0, \"today\": \"2026-11-18\"}",
+   "is_error": false
+  },
+  {
+   "type": "tool_call",
+   "name": "hand_off",
+   "args": {
+    "reason": "refund_over_limit",
+    "summary": "Customer Dev Patel (order HL-10252, delivered 15 Nov 2026) reports a cracked oak dining chair (SKU CHR-03, £145 each, 2 ordered) and asks for a refund. The refund for one chair (£145) is over the £50 limit. No photo of the damage or packaging has been provided yet (KB-106 asks for one within 14 days of delivery)."
+   },
+   "result": "{\"ticket_id\": \"CC-0001\", \"reason\": \"refund_over_limit\", \"summary\": \"Customer Dev Patel (order HL-10252, delivered 15 Nov 2026) reports a cracked oak dining chair (SKU CHR-03, \\u00a3145 each, 2 ordered) and asks for a refund. The refund for one chair (\\u00a3145) is over the \\u00a350 limit. No photo of the damage or packaging has been provided yet (KB-106 asks for one within 14 days of delivery).\", \"reply_by\": \"a person from customer care, by the end of the next working day\"}",
+   "is_error": false
+  },
+  {
+   "type": "parcel",
+   "text": "Thanks, Dev. I've found order HL-10252 for two oak dining chairs, delivered on 15 November. Because the refund for the cracked chair is more than I can approve, I've passed your case to our customer care team (reference CC-0001). Someone will reply by the end of the next working day. Please have a photo of the crack and the packaging ready, as they'll likely ask for it [KB-106].",
+   "stop_reason": "success"
+  }
+ ],
+ "usage": {
+  "input_tokens": 8,
+  "output_tokens": 1387,
+  "cache_creation_input_tokens": 3009,
+  "cache_read_input_tokens": 11431
+ },
+ "cost_usd": 0.002337,
+ "seconds": 9.734,
+ "end_state": {
+  "refunds": [],
+  "hand_offs": [
+   {
+    "ticket_id": "CC-0001",
+    "reason": "refund_over_limit",
+    "summary": "Customer Dev Patel (order HL-10252, delivered 15 Nov 2026) reports a cracked oak dining chair (SKU CHR-03, £145 each, 2 ordered) and asks for a refund. The refund for one chair (£145) is over the £50 limit. No photo of the damage or packaging has been provided yet (KB-106 asks for one within 14 days of delivery).",
+    "reply_by": "a person from customer care, by the end of the next working day"
+   }
+  ]
+ }
+}

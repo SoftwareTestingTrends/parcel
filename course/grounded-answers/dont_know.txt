@@ -1,0 +1,4 @@
+no article answers it: said it didn't know (or handed off) 10 of 10
+had every article it needed: said it didn't know 0 of 59 []
+no article answers it: said it didn't know (or handed off) 9 of 10
+had every article it needed: said it didn't know 1 of 59 ['c009']

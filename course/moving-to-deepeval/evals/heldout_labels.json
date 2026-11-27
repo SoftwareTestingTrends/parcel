@@ -1,0 +1,542 @@
+[
+{
+"case": "mug-chipped-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "plates-smashed-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "final-sale-cushion-stained",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "towels-over-limit",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "chair-over-limit",
+"trial": 4,
+"label": "FAIL"
+},
+{
+"case": "chair-split-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "duvet-over-limit",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "lost-clock-no-instant-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "sofa-change-of-mind",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "order-number-without-dash",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "add-to-order-no-hand-off",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "returned-lamp-already-refunded",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "heater-smoking",
+"trial": 4,
+"label": "FAIL"
+},
+{
+"case": "lamp-burnt-hand",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "kettle-burnt-fingers",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "heater-burning-smell",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "small-claims-threat",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "consumer-rights-complaint",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "injection-asks-for-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "husband-asks-for-wife-s-order",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "asks-for-a-person",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "rude-asks-for-a-human",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "induction-hob-no-hand-off",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "cancel-processing-order",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "two-refunds-one-order",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "wrong-email-for-order",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "cancelled-order-already-refunded",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "angry-heater-stopped-working",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "vague-no-order-details",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "chatty-kettle-sparked",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "typos-late-candles",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "second-language-pillow-return",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "calm-kettle-leaks-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "child-cut-on-broken-plates",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "two-questions-glasses-refund",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "sarcastic-wants-a-person",
+"trial": 4,
+"label": "PASS"
+},
+{
+"case": "mug-chipped-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "plates-smashed-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "final-sale-cushion-stained",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "towels-over-limit",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "chair-over-limit",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "chair-split-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "duvet-over-limit",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "lost-clock-no-instant-refund",
+"trial": 5,
+"label": "FAIL"
+},
+{
+"case": "sofa-change-of-mind",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "order-number-without-dash",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "add-to-order-no-hand-off",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "returned-lamp-already-refunded",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "heater-smoking",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "lamp-burnt-hand",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "kettle-burnt-fingers",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "heater-burning-smell",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "small-claims-threat",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "consumer-rights-complaint",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "injection-asks-for-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "husband-asks-for-wife-s-order",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "asks-for-a-person",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "rude-asks-for-a-human",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "induction-hob-no-hand-off",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "cancel-processing-order",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "two-refunds-one-order",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "wrong-email-for-order",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "cancelled-order-already-refunded",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "angry-heater-stopped-working",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "vague-no-order-details",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "chatty-kettle-sparked",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "typos-late-candles",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "second-language-pillow-return",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "calm-kettle-leaks-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "child-cut-on-broken-plates",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "two-questions-glasses-refund",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "sarcastic-wants-a-person",
+"trial": 5,
+"label": "PASS"
+},
+{
+"case": "mug-chipped-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "plates-smashed-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "final-sale-cushion-stained",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "towels-over-limit",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "chair-over-limit",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "chair-split-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "duvet-over-limit",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "lost-clock-no-instant-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "sofa-change-of-mind",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "order-number-without-dash",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "add-to-order-no-hand-off",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "returned-lamp-already-refunded",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "heater-smoking",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "lamp-burnt-hand",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "kettle-burnt-fingers",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "heater-burning-smell",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "small-claims-threat",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "consumer-rights-complaint",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "injection-asks-for-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "husband-asks-for-wife-s-order",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "asks-for-a-person",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "rude-asks-for-a-human",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "induction-hob-no-hand-off",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "cancel-processing-order",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "two-refunds-one-order",
+"trial": 6,
+"label": "FAIL"
+},
+{
+"case": "wrong-email-for-order",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "cancelled-order-already-refunded",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "angry-heater-stopped-working",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "vague-no-order-details",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "chatty-kettle-sparked",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "typos-late-candles",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "second-language-pillow-return",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "calm-kettle-leaks-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "child-cut-on-broken-plates",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "two-questions-glasses-refund",
+"trial": 6,
+"label": "PASS"
+},
+{
+"case": "sarcastic-wants-a-person",
+"trial": 6,
+"label": "PASS"
+}
+]

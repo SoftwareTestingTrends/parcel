@@ -1,0 +1,12 @@
+30 of 100 conversations had at least one failure
+
+  8  Asks the customer how much to refund, instead of looking the order up
+  7  Promises a person sooner than the ticket says ("shortly", "stay on the line")
+  6  Search missed the right article, so Parcel said it didn't know or gave half an answer
+  5  Gets a policy wrong or ignores it
+  4  Refund over £50 not passed to a person
+  3  Hands off when it shouldn't, or for the wrong reason
+  2  What the reply says doesn't match what Parcel did
+  2  Answers about an order without checking the order system
+  2  Cites the wrong article
+  1  Fails on an order number typed without the dash

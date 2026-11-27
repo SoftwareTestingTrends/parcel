@@ -1,0 +1,1471 @@
+{
+ "question": "Do you deliver to Spain?",
+ "articles": [
+  "KB-113",
+  "KB-102",
+  "KB-103"
+ ],
+ "reply": "Yes, we do deliver to Spain! We deliver to Ireland, France, Germany, the Netherlands, Belgium, and Spain [KB-113]. International standard delivery costs £9.95 and takes 5 to 8 working days [KB-113].",
+ "input_tokens": 830,
+ "output_tokens": 57,
+ "parcel_commit": "e42e346",
+ "recorded_at": "2026-11-21T00:43:50",
+ "steps": [
+  {
+   "picked": "Yes",
+   "probability": 0.9991,
+   "alternatives": [
+    {
+     "token": "Yes",
+     "probability": 0.9991
+    },
+    {
+     "token": "Hello",
+     "probability": 0.0006
+    },
+    {
+     "token": "We",
+     "probability": 0.0001
+    },
+    {
+     "token": "I",
+     "probability": 0.0
+    },
+    {
+     "token": "Oh",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 1.0
+    },
+    {
+     "token": " we",
+     "probability": 0.0
+    },
+    {
+     "token": " to",
+     "probability": 0.0
+    },
+    {
+     "token": " lovely",
+     "probability": 0.0
+    },
+    {
+     "token": " floral",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " we",
+   "probability": 0.9992,
+   "alternatives": [
+    {
+     "token": " we",
+     "probability": 0.9992
+    },
+    {
+     "token": " I",
+     "probability": 0.0006
+    },
+    {
+     "token": " Hollow",
+     "probability": 0.0001
+    },
+    {
+     "token": " to",
+     "probability": 0.0
+    },
+    {
+     "token": " the",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " do",
+   "probability": 0.945,
+   "alternatives": [
+    {
+     "token": " do",
+     "probability": 0.945
+    },
+    {
+     "token": " deliver",
+     "probability": 0.0548
+    },
+    {
+     "token": " absolutely",
+     "probability": 0.0
+    },
+    {
+     "token": " can",
+     "probability": 0.0
+    },
+    {
+     "token": " *",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " deliver",
+   "probability": 0.9958,
+   "alternatives": [
+    {
+     "token": " deliver",
+     "probability": 0.9958
+    },
+    {
+     "token": "!",
+     "probability": 0.0041
+    },
+    {
+     "token": " send",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    },
+    {
+     "token": " offer",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " to",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " to",
+     "probability": 1.0
+    },
+    {
+     "token": " our",
+     "probability": 0.0
+    },
+    {
+     "token": " items",
+     "probability": 0.0
+    },
+    {
+     "token": " outside",
+     "probability": 0.0
+    },
+    {
+     "token": " products",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " Spain",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " Spain",
+     "probability": 1.0
+    },
+    {
+     "token": " the",
+     "probability": 0.0
+    },
+    {
+     "token": " some",
+     "probability": 0.0
+    },
+    {
+     "token": " Spanish",
+     "probability": 0.0
+    },
+    {
+     "token": " France",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "!",
+   "probability": 0.5397,
+   "alternatives": [
+    {
+     "token": "!",
+     "probability": 0.5397
+    },
+    {
+     "token": " [",
+     "probability": 0.4113
+    },
+    {
+     "token": " as",
+     "probability": 0.0356
+    },
+    {
+     "token": ",",
+     "probability": 0.0102
+    },
+    {
+     "token": " alongside",
+     "probability": 0.0011
+    }
+   ]
+  },
+  {
+   "picked": " We",
+   "probability": 0.3614,
+   "alternatives": [
+    {
+     "token": " We",
+     "probability": 0.3614
+    },
+    {
+     "token": " You",
+     "probability": 0.313
+    },
+    {
+     "token": " [",
+     "probability": 0.0882
+    },
+    {
+     "token": " Hollow",
+     "probability": 0.07
+    },
+    {
+     "token": " Our",
+     "probability": 0.0514
+    }
+   ]
+  },
+  {
+   "picked": " deliver",
+   "probability": 0.3476,
+   "alternatives": [
+    {
+     "token": " deliver",
+     "probability": 0.3476
+    },
+    {
+     "token": " offer",
+     "probability": 0.3013
+    },
+    {
+     "token": " send",
+     "probability": 0.1797
+    },
+    {
+     "token": " also",
+     "probability": 0.043
+    },
+    {
+     "token": " ship",
+     "probability": 0.0393
+    }
+   ]
+  },
+  {
+   "picked": " to",
+   "probability": 0.994,
+   "alternatives": [
+    {
+     "token": " to",
+     "probability": 0.994
+    },
+    {
+     "token": " internationally",
+     "probability": 0.0029
+    },
+    {
+     "token": " across",
+     "probability": 0.0022
+    },
+    {
+     "token": " international",
+     "probability": 0.0004
+    },
+    {
+     "token": " there",
+     "probability": 0.0001
+    }
+   ]
+  },
+  {
+   "picked": " Ireland",
+   "probability": 0.9495,
+   "alternatives": [
+    {
+     "token": " Ireland",
+     "probability": 0.9495
+    },
+    {
+     "token": " several",
+     "probability": 0.0263
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0217
+    },
+    {
+     "token": " France",
+     "probability": 0.0018
+    },
+    {
+     "token": " a",
+     "probability": 0.0003
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 1.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    },
+    {
+     "token": " [",
+     "probability": 0.0
+    },
+    {
+     "token": " too",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " France",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " France",
+     "probability": 1.0
+    },
+    {
+     "token": " Germany",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    },
+    {
+     "token": " the",
+     "probability": 0.0
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 1.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " (",
+     "probability": 0.0
+    },
+    {
+     "token": " [",
+     "probability": 0.0
+    },
+    {
+     "token": "/",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " Germany",
+   "probability": 0.9999,
+   "alternatives": [
+    {
+     "token": " Germany",
+     "probability": 0.9999
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0
+    },
+    {
+     "token": " the",
+     "probability": 0.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 1.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " the",
+     "probability": 0.0
+    },
+    {
+     "token": " [",
+     "probability": 0.0
+    },
+    {
+     "token": "/",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " the",
+   "probability": 0.9999,
+   "alternatives": [
+    {
+     "token": " the",
+     "probability": 0.9999
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0001
+    },
+    {
+     "token": " Belgium",
+     "probability": 0.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " Germany",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " Netherlands",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " Netherlands",
+     "probability": 1.0
+    },
+    {
+     "token": " UK",
+     "probability": 0.0
+    },
+    {
+     "token": " EU",
+     "probability": 0.0
+    },
+    {
+     "token": " netherlands",
+     "probability": 0.0
+    },
+    {
+     "token": " Nether",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 1.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " (",
+     "probability": 0.0
+    },
+    {
+     "token": "/",
+     "probability": 0.0
+    },
+    {
+     "token": " [",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " Belgium",
+   "probability": 0.9998,
+   "alternatives": [
+    {
+     "token": " Belgium",
+     "probability": 0.9998
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0001
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    },
+    {
+     "token": " Belgian",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ",",
+   "probability": 0.9935,
+   "alternatives": [
+    {
+     "token": ",",
+     "probability": 0.9935
+    },
+    {
+     "token": " and",
+     "probability": 0.0065
+    },
+    {
+     "token": "s",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    },
+    {
+     "token": " alongside",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " and",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " and",
+     "probability": 1.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    },
+    {
+     "token": " Spain",
+     "probability": 0.0
+    },
+    {
+     "token": " *",
+     "probability": 0.0
+    },
+    {
+     "token": " AND",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " Spain",
+   "probability": 0.9991,
+   "alternatives": [
+    {
+     "token": " Spain",
+     "probability": 0.9991
+    },
+    {
+     "token": " also",
+     "probability": 0.0008
+    },
+    {
+     "token": " of",
+     "probability": 0.0
+    },
+    {
+     "token": " specifically",
+     "probability": 0.0
+    },
+    {
+     "token": " as",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " [",
+   "probability": 0.9987,
+   "alternatives": [
+    {
+     "token": " [",
+     "probability": 0.9987
+    },
+    {
+     "token": " as",
+     "probability": 0.0003
+    },
+    {
+     "token": " through",
+     "probability": 0.0003
+    },
+    {
+     "token": ",",
+     "probability": 0.0002
+    },
+    {
+     "token": " for",
+     "probability": 0.0002
+    }
+   ]
+  },
+  {
+   "picked": "KB",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "KB",
+     "probability": 1.0
+    },
+    {
+     "token": "HB",
+     "probability": 0.0
+    },
+    {
+     "token": "Article",
+     "probability": 0.0
+    },
+    {
+     "token": "kb",
+     "probability": 0.0
+    },
+    {
+     "token": "article",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "-",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "-",
+     "probability": 1.0
+    },
+    {
+     "token": "/",
+     "probability": 0.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": ":",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "1",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "1",
+     "probability": 1.0
+    },
+    {
+     "token": "-",
+     "probability": 0.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "1",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "1",
+     "probability": 1.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "3",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "3",
+     "probability": 1.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "5",
+     "probability": 0.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "].",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "].",
+     "probability": 1.0
+    },
+    {
+     "token": "]",
+     "probability": 0.0
+    },
+    {
+     "token": "].\"",
+     "probability": 0.0
+    },
+    {
+     "token": "],",
+     "probability": 0.0
+    },
+    {
+     "token": "];",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " International",
+   "probability": 0.743,
+   "alternatives": [
+    {
+     "token": " International",
+     "probability": 0.743
+    },
+    {
+     "token": "<turn|>",
+     "probability": 0.0899
+    },
+    {
+     "token": " Standard",
+     "probability": 0.0273
+    },
+    {
+     "token": "\n\n",
+     "probability": 0.0263
+    },
+    {
+     "token": " For",
+     "probability": 0.0184
+    }
+   ]
+  },
+  {
+   "picked": " standard",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " standard",
+     "probability": 1.0
+    },
+    {
+     "token": " Standard",
+     "probability": 0.0
+    },
+    {
+     "token": " delivery",
+     "probability": 0.0
+    },
+    {
+     "token": " tracking",
+     "probability": 0.0
+    },
+    {
+     "token": " service",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " delivery",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " delivery",
+     "probability": 1.0
+    },
+    {
+     "token": " UK",
+     "probability": 0.0
+    },
+    {
+     "token": " shipping",
+     "probability": 0.0
+    },
+    {
+     "token": " tracking",
+     "probability": 0.0
+    },
+    {
+     "token": " deliveries",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " costs",
+   "probability": 0.5873,
+   "alternatives": [
+    {
+     "token": " costs",
+     "probability": 0.5873
+    },
+    {
+     "token": " takes",
+     "probability": 0.3159
+    },
+    {
+     "token": " to",
+     "probability": 0.0633
+    },
+    {
+     "token": " for",
+     "probability": 0.0179
+    },
+    {
+     "token": " will",
+     "probability": 0.0091
+    }
+   ]
+  },
+  {
+   "picked": " £",
+   "probability": 0.9999,
+   "alternatives": [
+    {
+     "token": " £",
+     "probability": 0.9999
+    },
+    {
+     "token": " are",
+     "probability": 0.0001
+    },
+    {
+     "token": " $\\",
+     "probability": 0.0
+    },
+    {
+     "token": " a",
+     "probability": 0.0
+    },
+    {
+     "token": " just",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "9",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "9",
+     "probability": 1.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    },
+    {
+     "token": "8",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": ".",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": ".",
+     "probability": 1.0
+    },
+    {
+     "token": ",",
+     "probability": 0.0
+    },
+    {
+     "token": "9",
+     "probability": 0.0
+    },
+    {
+     "token": " and",
+     "probability": 0.0
+    },
+    {
+     "token": "\\.",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "9",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "9",
+     "probability": 1.0
+    },
+    {
+     "token": "5",
+     "probability": 0.0
+    },
+    {
+     "token": "<channel|>",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    },
+    {
+     "token": "7",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "5",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "5",
+     "probability": 1.0
+    },
+    {
+     "token": "9",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    },
+    {
+     "token": "6",
+     "probability": 0.0
+    },
+    {
+     "token": "7",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " and",
+   "probability": 0.9982,
+   "alternatives": [
+    {
+     "token": " and",
+     "probability": 0.9982
+    },
+    {
+     "token": ".",
+     "probability": 0.0008
+    },
+    {
+     "token": ",",
+     "probability": 0.0006
+    },
+    {
+     "token": " [",
+     "probability": 0.0001
+    },
+    {
+     "token": " to",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " takes",
+   "probability": 0.7227,
+   "alternatives": [
+    {
+     "token": " takes",
+     "probability": 0.7227
+    },
+    {
+     "token": " usually",
+     "probability": 0.1784
+    },
+    {
+     "token": " generally",
+     "probability": 0.0563
+    },
+    {
+     "token": " typically",
+     "probability": 0.0396
+    },
+    {
+     "token": " should",
+     "probability": 0.0022
+    }
+   ]
+  },
+  {
+   "picked": " ",
+   "probability": 0.9743,
+   "alternatives": [
+    {
+     "token": " ",
+     "probability": 0.9743
+    },
+    {
+     "token": " between",
+     "probability": 0.0219
+    },
+    {
+     "token": " about",
+     "probability": 0.0026
+    },
+    {
+     "token": " around",
+     "probability": 0.0012
+    },
+    {
+     "token": " five",
+     "probability": 0.0001
+    }
+   ]
+  },
+  {
+   "picked": "5",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "5",
+     "probability": 1.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    },
+    {
+     "token": "7",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " to",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " to",
+     "probability": 1.0
+    },
+    {
+     "token": "-",
+     "probability": 0.0
+    },
+    {
+     "token": "–",
+     "probability": 0.0
+    },
+    {
+     "token": "to",
+     "probability": 0.0
+    },
+    {
+     "token": " -",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " ",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " ",
+     "probability": 1.0
+    },
+    {
+     "token": " **",
+     "probability": 0.0
+    },
+    {
+     "token": " $\\",
+     "probability": 0.0
+    },
+    {
+     "token": " *",
+     "probability": 0.0
+    },
+    {
+     "token": " to",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "8",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "8",
+     "probability": 1.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "9",
+     "probability": 0.0
+    },
+    {
+     "token": "7",
+     "probability": 0.0
+    },
+    {
+     "token": "6",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " working",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " working",
+     "probability": 1.0
+    },
+    {
+     "token": " business",
+     "probability": 0.0
+    },
+    {
+     "token": " workings",
+     "probability": 0.0
+    },
+    {
+     "token": " days",
+     "probability": 0.0
+    },
+    {
+     "token": " weeks",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " days",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": " days",
+     "probability": 1.0
+    },
+    {
+     "token": " day",
+     "probability": 0.0
+    },
+    {
+     "token": " días",
+     "probability": 0.0
+    },
+    {
+     "token": " weeks",
+     "probability": 0.0
+    },
+    {
+     "token": "days",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": " [",
+   "probability": 0.7538,
+   "alternatives": [
+    {
+     "token": " [",
+     "probability": 0.7538
+    },
+    {
+     "token": ".",
+     "probability": 0.2411
+    },
+    {
+     "token": " to",
+     "probability": 0.004
+    },
+    {
+     "token": ",",
+     "probability": 0.0007
+    },
+    {
+     "token": " by",
+     "probability": 0.0001
+    }
+   ]
+  },
+  {
+   "picked": "KB",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "KB",
+     "probability": 1.0
+    },
+    {
+     "token": "CB",
+     "probability": 0.0
+    },
+    {
+     "token": "HB",
+     "probability": 0.0
+    },
+    {
+     "token": "NB",
+     "probability": 0.0
+    },
+    {
+     "token": "article",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "-",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "-",
+     "probability": 1.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "/",
+     "probability": 0.0
+    },
+    {
+     "token": ".",
+     "probability": 0.0
+    },
+    {
+     "token": "_",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "1",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "1",
+     "probability": 1.0
+    },
+    {
+     "token": "-",
+     "probability": 0.0
+    },
+    {
+     "token": "9",
+     "probability": 0.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "1",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "1",
+     "probability": 1.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "3",
+     "probability": 0.0
+    },
+    {
+     "token": "5",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "3",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "3",
+     "probability": 1.0
+    },
+    {
+     "token": "1",
+     "probability": 0.0
+    },
+    {
+     "token": "2",
+     "probability": 0.0
+    },
+    {
+     "token": "5",
+     "probability": 0.0
+    },
+    {
+     "token": "0",
+     "probability": 0.0
+    }
+   ]
+  },
+  {
+   "picked": "].",
+   "probability": 1.0,
+   "alternatives": [
+    {
+     "token": "].",
+     "probability": 1.0
+    },
+    {
+     "token": "]",
+     "probability": 0.0
+    },
+    {
+     "token": "],",
+     "probability": 0.0
+    },
+    {
+     "token": "].\"",
+     "probability": 0.0
+    },
+    {
+     "token": "];",
+     "probability": 0.0
+    }
+   ]
+  }
+ ]
+}

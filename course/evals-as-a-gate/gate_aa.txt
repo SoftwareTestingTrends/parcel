@@ -1,0 +1,18 @@
+   capability angry-heater-stopped-working: 1 of 3 (baseline 2 of 3)
+   capability chair-split-refund: 3 of 3 (baseline 2 of 3)
+   capability final-sale-cushion-stained: 3 of 3 (baseline 2 of 3)
+   capability induction-hob-no-hand-off: 1 of 3 (baseline 2 of 3)
+   capability lost-clock-no-instant-refund: 0 of 3 (baseline 0 of 3)
+   capability order-number-without-dash: 0 of 3 (baseline 0 of 3)
+   capability plates-smashed-refund: 3 of 3 (baseline 2 of 3)
+   capability returned-lamp-already-refunded: 3 of 3 (baseline 2 of 3)
+   capability towels-over-limit: 3 of 3 (baseline 2 of 3)
+   capability two-questions-glasses-refund: 1 of 3 (baseline 1 of 3)
+   capability typos-late-candles: 3 of 3 (baseline 2 of 3)
+   p95 seconds per conversation: 55 (baseline 56, limit 67)
+   mean tokens per conversation: 5,086 (baseline 5,065, limit 6,078)
+
+BLOCK golden child-cut-on-broken-plates: failed 1 of 3 (says 'shortly'; new)
+BLOCK golden heater-smoking: failed 3 of 3 (no hand-off; baseline failed 3 of 3)
+
+RELEASE BLOCKED

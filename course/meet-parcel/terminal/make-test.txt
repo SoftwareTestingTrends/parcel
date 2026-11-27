@@ -1,0 +1,16 @@
+$ make test
+uv run pytest
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
+rootdir: ~/parcel
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0
+collected 30 items
+
+tests/test_assistant_mock.py .......                                     [ 23%]
+tests/test_knowledge.py ......                                           [ 43%]
+tests/test_orders.py .............                                       [ 86%]
+tests/test_tools.py ....                                                 [100%]
+
+============================== 30 passed in 0.03s ==============================

@@ -1,0 +1,2 @@
+$ uv run parcel --no-trace ask "Do you deliver to Spain?"
+Parcel: We deliver to Ireland, France, Germany, the Netherlands, Belgium and Spain. [KB-113]

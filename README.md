@@ -90,6 +90,7 @@ src/parcel/
   policy.py       the numbers: refund limit, return window, hand-off reasons
   transcript.py   the trace format
 tests/            offline tests (mock backend)
+course/           the course's runs, graders and scripts, one folder per lesson (see course/README.md)
 ```
 
 ## Licence

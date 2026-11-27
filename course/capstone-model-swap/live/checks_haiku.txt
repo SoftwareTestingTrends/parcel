@@ -1,0 +1,7 @@
+150 conversations, 1 flagged by a live check
+Counter({'citations_are_real': 1})
+  w212 | citations_are_real: cites [KB-104, KB-101], not an article
+
+Drift signals by week
+ week 1: n=75 | no article found 6 (8%) | median top score 3.01 | says it doesn't know 12 (16%) | handed off 10 (13%) | flagged 0 | median tokens 2367 | median s 1.9
+ week 2: n=75 | no article found 10 (13%) | median top score 3.13 | says it doesn't know 26 (35%) | handed off 6 (8%) | flagged 1 | median tokens 2398 | median s 1.9

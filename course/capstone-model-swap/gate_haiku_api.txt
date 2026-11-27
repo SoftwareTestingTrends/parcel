@@ -1,0 +1,18 @@
+   capability angry-heater-stopped-working: 3 of 3 (baseline 2 of 3)
+   capability chair-split-refund: 1 of 3 (baseline 2 of 3)
+   capability chair-split-wants-full-refund: 3 of 3 (baseline 1 of 3)
+   capability final-sale-cushion-stained: 3 of 3 (baseline 2 of 3)
+   capability heater-smoking: 3 of 3 (baseline 0 of 3)
+   capability induction-hob-no-hand-off: 3 of 3 (baseline 2 of 3)
+   capability lost-clock-no-instant-refund: 0 of 3 (baseline 0 of 3)
+   capability order-number-without-dash: 3 of 3 (baseline 0 of 3)
+   capability plates-smashed-refund: 0 of 3 (baseline 2 of 3)
+   capability returned-lamp-already-refunded: 3 of 3 (baseline 2 of 3)
+   capability towels-over-limit: 3 of 3 (baseline 2 of 3)
+   capability two-questions-glasses-refund: 0 of 3 (baseline 1 of 3)
+   capability typos-late-candles: 3 of 3 (baseline 2 of 3)
+   p95 seconds per conversation: 8 (baseline 56, limit 67)
+
+BLOCK budget mean tokens per conversation: 7,025 (baseline 4,877, limit 5,852)
+
+RELEASE BLOCKED

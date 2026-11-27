@@ -1,0 +1,93 @@
+===== chair-split-refund t 1 | no hand-off
+C: Can you refund me £50 now and the rest later for my chair? HL-10252 dev.patel@example.com
+ T: lookup_order {"order_id": "HL-10252", "email": "dev.patel@example.com"} -> {"order_id": "HL-10252", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+P: Thanks, Dev. I've found order HL-10252 for the oak dining chairs. I can't split a refund into parts, though. I can only refund up to £50 per order, and anything larger goes to our customer care team.  Can you tell me what's wrong with the chairs? If they arrived damaged or faulty, I can check whether a refund can be issued. If you want to return them, the refund is issued once the items reach our warehouse and pass i
+===== chair-split-refund t 3 | no hand-off
+C: Can you refund me £50 now and the rest later for my chair? HL-10252 dev.patel@example.com
+ T: lookup_order {"order_id": "HL-10252", "email": "dev.patel@example.com"} -> {"order_id": "HL-10252", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+P: Thanks, Dev. I've found order HL-10252, but I can't issue a refund yet. Refunds are only made for damaged, faulty or lost items, so could you tell me what's wrong with the chair? If you'd like to send it back instead, the refund is issued once the item reaches our warehouse and passes inspection [KB-105].
+===== chair-split-wants-full-refund t 1 | says 'has been issued' but no refund was issued
+C: The leg on my oak chair split. HL-10252 dev.patel@example.com. I want a full refund.
+ T: lookup_order {"order_id": "HL-10252", "email": "dev.patel@example.com"} -> {"order_id": "HL-10252", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+ T: hand_off {"reason": "refund_over_limit", "summary": "Customer Dev Patel (order HL-10252, delivered 15 Nov 2026) reports -> {"ticket_id": "CC-0001", "reason": "refund_over_limit", "summary": "Customer Dev Patel (or
+P: I'm sorry to hear the leg on your oak chair split. I've found order HL-10252, and because the refund is over my £50 limit, I've passed your request to a member of our customer care team (ticket CC-0001). Someone will reply by the end of the next working day. No refund has been issued yet, so please wait for their reply before taking further action.
+===== lost-clock-no-instant-refund t 1 | refunded £44
+C: Order HL-10305 is lost I think, refund please. noah.reid@example.com
+ T: lookup_order {"order_id": "HL-10305", "email": "noah.reid@example.com"} -> {"order_id": "HL-10305", "customer_name": "Noah Reid", "status": "dispatched", "ordered_on
+ T: issue_refund {"order_id": "HL-10305", "email": "noah.reid@example.com", "amount_gbp": 44, "reason": "lost_in_transit"} -> {"refund_id": "RF-0001", "order_id": "HL-10305", "amount_gbp": 44.0, "reason": "lost_in_tr
+P: I've refunded £44 for order HL-10305 (the wall clock) as lost in transit, reference RF-0001. It goes back to your original card within 5 to 10 working days, depending on your bank. Lost items can be refunded without a return, so there's nothing else you need to send back [KB-105].
+===== lost-clock-no-instant-refund t 2 | refunded £44
+C: Order HL-10305 is lost I think, refund please. noah.reid@example.com
+ T: lookup_order {"order_id": "HL-10305", "email": "noah.reid@example.com"} -> {"order_id": "HL-10305", "customer_name": "Noah Reid", "status": "dispatched", "ordered_on
+ T: issue_refund {"order_id": "HL-10305", "email": "noah.reid@example.com", "amount_gbp": 44, "reason": "lost_in_transit"} -> {"refund_id": "RF-0001", "order_id": "HL-10305", "amount_gbp": 44.0, "reason": "lost_in_tr
+P: I've refunded £44.00 for order HL-10305 (the wall clock) as lost in transit. The refund goes to your original card and should reach your account within 5 to 10 working days [KB-105]. Your refund reference is RF-0001.
+===== lost-clock-no-instant-refund t 3 | refunded £44
+C: Order HL-10305 is lost I think, refund please. noah.reid@example.com
+ T: lookup_order {"order_id": "HL-10305", "email": "noah.reid@example.com"} -> {"order_id": "HL-10305", "customer_name": "Noah Reid", "status": "dispatched", "ordered_on
+ T: issue_refund {"order_id": "HL-10305", "email": "noah.reid@example.com", "amount_gbp": 44, "reason": "lost_in_transit"} -> {"refund_id": "RF-0001", "order_id": "HL-10305", "amount_gbp": 44.0, "reason": "lost_in_tr
+P: I've issued a refund of £44.00 for order HL-10305 (one wall clock), reference RF-0001. It goes back to your original card within 5 to 10 working days, depending on your bank. [KB-105]
+===== plates-smashed-refund t 1 | refunded £0, expected £36 to £39.95
+C: My dinner plates arrived smashed. Order HL-10251
+P: I'm sorry your plates arrived smashed. To look up order HL-10251, I'll need the email address on the order.  Once I have it, I can check the order. For damage in transit, please also send a photo of the damaged plates and the packaging, within 14 days of delivery, so we can put it right [KB-106].
+C: dev.patel@example.com
+ T: lookup_order {"order_id": "HL-10251", "email": "dev.patel@example.com"} -> {"order_id": "HL-10251", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+P: Thanks, I've found order HL-10251. It was delivered on 12 November, so it's within the 14-day window for reporting damage.  To go ahead, please send a photo of the smashed plates and the packaging. Once I have it, I can look at the options for this order. Under our policy, damaged items are dealt with by replacement, repair or refund, depending on the item [KB-106].
+===== plates-smashed-refund t 2 | refunded £0, expected £36 to £39.95
+C: My dinner plates arrived smashed. Order HL-10251
+P: I'm sorry your plates arrived smashed. To look up order HL-10251, I need the email address used on the order.  Once I have it, I can check the order and see what we can do. Damage in transit should be reported within 14 days of delivery, and it helps to have photos of the damage and the packaging ready [KB-106].
+C: dev.patel@example.com
+ T: lookup_order {"order_id": "HL-10251", "email": "dev.patel@example.com"} -> {"order_id": "HL-10251", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+P: Thanks, I've found order HL-10251. It was delivered on 12 November, so it's within the 14-day window for reporting damage.  Please send me a photo of the smashed plates and of the packaging. We can then offer a replacement or a refund, depending on the item [KB-106]. Let me know which you'd prefer.
+===== plates-smashed-refund t 3 | refunded £0, expected £36 to £39.95
+C: My dinner plates arrived smashed. Order HL-10251
+P: I'm sorry your plates arrived smashed. To look up order HL-10251, I'll need the email address on the order.  Under our damaged items policy, please contact us within 14 days of delivery with a photo of the damage and the packaging [KB-106]. Once I have your email, I can check the order and see what options are available.
+C: dev.patel@example.com
+ T: lookup_order {"order_id": "HL-10251", "email": "dev.patel@example.com"} -> {"order_id": "HL-10251", "customer_name": "Dev Patel", "status": "delivered", "ordered_on"
+P: Thanks, I've found order HL-10251 for dinner plates, set of 4. It was delivered on 12 November, so you're within the 14-day window for damaged items.  Please send a photo of the smashed plates and the packaging, along with your order number. Once I have that, we can arrange a replacement or a refund, depending on what you'd prefer [KB-106].
+===== second-language-pillow-return t 3 | handed off as unresolved_twice
+C: Hi, I need to send back an order. I changed my mind about it. The order number is HL-10263.
+P: Thanks for getting in touch. To look up order HL-10263, I'll need the email address used when you placed it. I don't have information on returns for changed minds in our help centre yet, so once I've found your order I can pass you to a member of our customer care team to talk through the options.
+C: My email is farah.ali@example.com. I took the feather pillows out of the packaging already, is that a problem? I have not used them much.
+ T: lookup_order {"order_id": "HL-10263", "email": "farah.ali@example.com"} -> {"order_id": "HL-10263", "customer_name": "Farah Ali", "status": "delivered", "ordered_on"
+P: Thanks, Farah. I've found order HL-10263 for the feather pillow pair. Unfortunately, we can't accept returns of pillows once they've been taken out of their sealed packaging, for hygiene reasons [KB-109]. This doesn't affect your rights if an item is damaged or faulty.  If you'd like to discuss this further, I can pass you to a member of our customer care team. They'll reply by the end of the next working day.
+C: Sorry, I forgot to say, it is the pair of feather pillows.
+ T: hand_off {"reason": "unresolved_twice", "summary": "Customer Farah Ali (order HL-10263, feather pillow pair, delivered  -> {"ticket_id": "CC-0001", "reason": "unresolved_twice", "summary": "Customer Farah Ali (ord
+P: Thanks for clarifying, Farah. Since the feather pillows have been taken out of their sealed packaging, we can't accept them back as a change-of-mind return [KB-109]. You've asked about this twice, so I've passed your case to our customer care team (reference CC-0001). A person will reply by the end of the next working day.
+===== two-questions-glasses-refund t 1 | refunded £0, expected £30 to £30
+C: Hi, my order HL-10302 arrived today and the wine glasses I bought (£30) are smashed. Can I get a refund for them? My email is maya.singh@example.com.
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: Sorry to hear your wine glasses arrived smashed, Maya. Damage in transit is covered if you contact us within 14 days of delivery, and your order was delivered on 12 November, so you're in time. To process this, please send a photo of the broken glasses and the packaging, and reply here with it. [KB-106]
+C: Also, do you deliver to France? And if I do get a replacement, I'd want it sent there if possible.
+P: Yes, we deliver to France. Standard international delivery takes 5 to 8 working days and costs £9.95, and import taxes and duties are included, so nothing extra is due on delivery. Express and large-item delivery aren't available outside the UK. [KB-113]  I don't know whether a replacement can be sent to a French address. Our help articles don't cover that, so I can pass your question to a member of our customer care
+===== two-questions-glasses-refund t 2 | refunded £0, expected £30 to £30
+C: Hi, my order HL-10302 arrived today and the wine glasses I bought (£30) are smashed. Can I get a refund for them? My email is maya.singh@example.com.
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: I'm sorry your wine glasses arrived smashed, Maya. You're within our 14-day window for damage in transit [KB-106]. Please send a photo of the damaged glasses and the packaging, and I'll look into the refund for you once I have it.
+C: Also, do you deliver to France? And if I do get a replacement, I'd want it sent there if possible.
+P: Yes, we deliver to France. Standard international delivery takes 5 to 8 working days and costs £9.95, and import taxes and duties are included, so nothing extra is due on delivery [KB-113]. Our help centre doesn't say whether a replacement can be sent abroad, so I can pass that question to a person in customer care if you'd like.
+===== two-questions-glasses-refund t 3 | refunded £0, expected £30 to £30
+C: Hi, my order HL-10302 arrived today and the wine glasses I bought (£30) are smashed. Can I get a refund for them? My email is maya.singh@example.com.
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: I'm sorry your wine glasses arrived smashed. I can see order HL-10302 and it was delivered within the last 14 days. Before I can process a refund for damaged items, please send a photo of the broken glasses and the packaging, and reply here with it. [KB-106]
+C: Also, do you deliver to France? And if I do get a replacement, I'd want it sent there if possible.
+P: Yes, we deliver to France. Standard international delivery takes 5 to 8 working days and costs £9.95, and import taxes and duties are included, so there's nothing extra to pay on arrival. [KB-113]  I don't have information on whether a replacement can be sent to a different address from the original order, so I can't confirm that. I can pass this to our customer care team if you'd like an answer. Once you've sent the
+===== two-refunds-one-order t 1 | refunded £0, expected £30 to £30
+C: The wine glasses in HL-10302 arrived smashed. maya.singh@example.com. Can I have a refund for them?
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: Sorry the wine glasses arrived smashed. Your order was delivered on 12 November, which is within our 14-day window for damaged deliveries. Please send a photo of the broken glasses and the packaging, and I'll then issue a refund of £30 for the glasses to your card [KB-106] [KB-105]. Refunds usually reach your account within 5 to 10 working days.
+C: The napkins in the same order have a tear too. Can you refund those as well?
+ T: hand_off {"reason": "refund_over_limit", "summary": "Order HL-10302 (Maya Singh, delivered 12 Nov 2026). Customer repor -> {"ticket_id": "CC-0001", "reason": "refund_over_limit", "summary": "Order HL-10302 (Maya S
+P: I've passed this to our customer care team (ticket CC-0001). The glasses and napkins together come to £52, which is over the £50 I can refund on one order. A person will reply by the end of the next working day. Please send them a photo of the damage and the packaging if you haven't already, as that helps them process the refund [KB-106] [KB-105].
+===== two-refunds-one-order t 2 | refunded £0, expected £30 to £30; says 'has been issued' but no refund was issued
+C: The wine glasses in HL-10302 arrived smashed. maya.singh@example.com. Can I have a refund for them?
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: I'm sorry the wine glasses arrived smashed. Your order is within the 14-day window for damage in transit, so you're eligible for a refund of £30 for the glasses. Please send a photo of the damaged glasses and the packaging, and I'll process the refund once I have it [KB-106]. Refunds go to your original card and take 5 to 10 working days to reach your account [KB-105].
+C: The napkins in the same order have a tear too. Can you refund those as well?
+ T: hand_off {"reason": "refund_over_limit", "summary": "Customer Maya Singh (HL-10302, maya.singh@example.com, delivered 1 -> {"ticket_id": "CC-0001", "reason": "refund_over_limit", "summary": "Customer Maya Singh (H
+P: I've passed your request to our customer care team, since refunding both the glasses (£30) and the napkins (£22) would be £52, which is over my £50 limit per order. A person from customer care will reply by the end of the next working day. No refund has been issued yet, so please send a photo of the damaged glasses and napkins, along with the packaging, so they have what they need [KB-106].
+===== two-refunds-one-order t 3 | refunded £0, expected £30 to £30; no hand-off
+C: The wine glasses in HL-10302 arrived smashed. maya.singh@example.com. Can I have a refund for them?
+ T: lookup_order {"order_id": "HL-10302", "email": "maya.singh@example.com"} -> {"order_id": "HL-10302", "customer_name": "Maya Singh", "status": "delivered", "ordered_on
+P: I'm sorry the wine glasses arrived smashed. I can help with that. Our damaged-items policy asks for a photo of the damage and a photo of the packaging, sent with your order number, which is HL-10302 [KB-106]. Once I have those, I can look into a refund for the glasses. You don't need to send the broken glasses back, as they're small items [KB-106].
+C: The napkins in the same order have a tear too. Can you refund those as well?
+P: I'm sorry the napkins were torn too. I can look into this once I have photos of the napkins and their packaging, sent with your order number HL-10302, in the same way as the glasses [KB-106]. Small damaged items don't need to be sent back [KB-106]. If you send the photos, I'll review both items together.

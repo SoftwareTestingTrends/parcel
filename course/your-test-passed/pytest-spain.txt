@@ -1,0 +1,86 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ../../../.venv/bin/python
+rootdir: ~/course-generator-ai
+configfile: pytest.ini
+plugins: anyio-4.16.0
+collecting ... collected 10 items
+
+test_spain_exact.py::test_exact_match[run1] PASSED                       [ 10%]
+test_spain_exact.py::test_exact_match[run2] FAILED                       [ 20%]
+test_spain_exact.py::test_exact_match[run3] FAILED                       [ 30%]
+test_spain_exact.py::test_exact_match[run4] FAILED                       [ 40%]
+test_spain_exact.py::test_exact_match[run5] FAILED                       [ 50%]
+test_spain_exact.py::test_contains_price_and_time[run1] PASSED           [ 60%]
+test_spain_exact.py::test_contains_price_and_time[run2] PASSED           [ 70%]
+test_spain_exact.py::test_contains_price_and_time[run3] PASSED           [ 80%]
+test_spain_exact.py::test_contains_price_and_time[run4] PASSED           [ 90%]
+test_spain_exact.py::test_contains_price_and_time[run5] PASSED           [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_exact_match[run2] ____________________________
+
+reply = "Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and larg...e outside the UK, and EU orders include import taxes and duties, so there's nothing extra to pay on delivery. [KB-113]"
+
+    @pytest.mark.parametrize("reply", REPLIES, ids=[f"run{i}" for i in range(1, len(REPLIES) + 1)])
+    def test_exact_match(reply):
+>       assert reply == EXPECTED
+E       AssertionError: assert 'Yes, we deli...ery. [KB-113]' == 'Yes, we deli...ery. [KB-113]'
+E         
+E         - Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and large-item delivery aren't available outside the UK, and EU orders include import taxes and duties in the price, so there's nothing extra to pay on delivery. [KB-113]
+E         ?                                                                                                                                                                                                                    ^^^    ^^^^^^^^^^^  ----------
+E         + Yes, we deliver to Spain. International standard d...
+E         
+E         ...Full output truncated, use '-vv' to show
+
+test_spain_exact.py:26: AssertionError
+____________________________ test_exact_match[run3] ____________________________
+
+reply = "Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and larg...e outside the UK, and EU orders include import taxes and duties, so there's nothing extra to pay on delivery [KB-113]."
+
+    @pytest.mark.parametrize("reply", REPLIES, ids=[f"run{i}" for i in range(1, len(REPLIES) + 1)])
+    def test_exact_match(reply):
+>       assert reply == EXPECTED
+E       AssertionError: assert 'Yes, we deli...ery [KB-113].' == 'Yes, we deli...ery. [KB-113]'
+E         
+E         - Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and large-item delivery aren't available outside the UK, and EU orders include import taxes and duties in the price, so there's nothing extra to pay on delivery. [KB-113]
+E         ?                                                                                                                                                                                                                    ^^^    ^^^^^^^^^^^  ----------                            -
+E         + Yes, we deliver to Sp...
+E         
+E         ...Full output truncated, use '-vv' to show
+
+test_spain_exact.py:26: AssertionError
+____________________________ test_exact_match[run4] ____________________________
+
+reply = 'Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and larg...e outside the UK, and import taxes and duties are included in the price, so nothing extra is due on delivery [KB-113].'
+
+    @pytest.mark.parametrize("reply", REPLIES, ids=[f"run{i}" for i in range(1, len(REPLIES) + 1)])
+    def test_exact_match(reply):
+>       assert reply == EXPECTED
+E       AssertionError: assert 'Yes, we deli...ery [KB-113].' == 'Yes, we deli...ery. [KB-113]'
+E         
+E         - Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and large-item delivery aren't available outside the UK, and EU orders include import taxes and duties in the price, so there's nothing extra to pay on delivery. [KB-113]
+E         + Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and large-item delivery aren't available outside the UK, and import taxes and duties are included in the price, so nothing extra is due on delivery [KB-113].
+
+test_spain_exact.py:26: AssertionError
+____________________________ test_exact_match[run5] ____________________________
+
+reply = "Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and larg...e outside the UK, and EU orders include import taxes and duties, so there's nothing extra to pay on delivery. [KB-113]"
+
+    @pytest.mark.parametrize("reply", REPLIES, ids=[f"run{i}" for i in range(1, len(REPLIES) + 1)])
+    def test_exact_match(reply):
+>       assert reply == EXPECTED
+E       AssertionError: assert 'Yes, we deli...ery. [KB-113]' == 'Yes, we deli...ery. [KB-113]'
+E         
+E         - Yes, we deliver to Spain. International standard delivery takes 5 to 8 working days and costs £9.95. Express and large-item delivery aren't available outside the UK, and EU orders include import taxes and duties in the price, so there's nothing extra to pay on delivery. [KB-113]
+E         ?                                                                                                                                                                                                                    ^^^    ^^^^^^^^^^^  ----------
+E         + Yes, we deliver to Spain. International standard d...
+E         
+E         ...Full output truncated, use '-vv' to show
+
+test_spain_exact.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED test_spain_exact.py::test_exact_match[run2] - AssertionError: assert '...
+FAILED test_spain_exact.py::test_exact_match[run3] - AssertionError: assert '...
+FAILED test_spain_exact.py::test_exact_match[run4] - AssertionError: assert '...
+FAILED test_spain_exact.py::test_exact_match[run5] - AssertionError: assert '...
+========================= 4 failed, 6 passed in 0.04s ==========================

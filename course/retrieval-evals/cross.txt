@@ -1,0 +1,36 @@
+today's search matches the recorded run on 94 of 94 labelled messages
+
+found all it needs, no knowledge failure: 57
+
+found all it needs, answer wrong -> answer problem: 2
+   c009 msg 1 ['WRONG_POLICY'] | 'Do you deliver to the US?' | KB-113 retrieved but says no info on US; says 'I'll connect you now' but never calls hand_off
+   c068 msg 1 ['WRONG_POLICY'] | 'Wall clock HL-10305 arrived broken' | Order shows dispatched, not delivered, but Parcel offers a damage refund and asks the customer the v
+
+missed an article, answer wrong -> search problem: 11
+   c006 msg 1 ['SEARCH_MISS'] | 'Do you ship to Italy?' | Says articles don't cover Italy; search found nothing. KB-113 lists the 6 countries, so the answer i
+   c094 msg 1 ['WRONG_POLICY'] | 'Can I return my sofa? I changed my mind. HL-10290 kofi.mensah@example.' | Gives return steps for a made-to-order sofa (can't be returned; could be cancelled within 24 hours);
+   c017 msg 1 ['SEARCH_MISS'] | 'When will I get my money back?' | Refunds article not retrieved; explains returns but never says 5 to 10 working days
+   c018 msg 1 ['SEARCH_MISS'] | 'Do you refund the delivery cost if I send something back?' | Says it has no info on refunding delivery; KB-105 answers it but wasn't retrieved
+   c047 msg 1 ['WRONG_POLICY'] | 'Where is order HL-10305? My email is noah.reid@example.com' | Parcel dispatched 11 days ago treated as on time ('tracking link shortly'); KB-103 late-parcel steps
+   c048 msg 1 ['SEARCH_MISS'] | "My candles haven't arrived, order HL-10260" | Dispatched 12 days ago to Ireland; says it has no info on delays (follow-up message retrieves no art
+   c076 msg 1 ['WRONG_POLICY'] | 'Order HL-10305 is lost I think, refund please. noah.reid@example.com' | Refunds a 'lost' parcel at once; KB-103 says the courier is investigated first
+   c098 msg 1 ['SEARCH_MISS'] | "I'm moving house next week, can you hold my order HL-10232? amira.khan" | Hands off as customer_asked (not asked); says no article covers changing addresses (KB-108 not retri
+   c040 msg 1 ['SEARCH_MISS'] | "What's your warranty on furniture?" | Says no warranty info; KB-106 (faults within 12 months) not retrieved
+   c063 msg 1 ['WRONG_CITE'] | 'The kettle from order HL-10281 leaks from the base. isaac.cohen@exampl' | Asks the kettle's price instead of looking it up; cites KB-107 (cancelling) for a faulty item
+   c071 msg 1 ['WRONG_CITE'] | 'The mirror I ordered (HL-10296) came cracked, lena.fischer@example.com' | Mirror £84.95: no hand-off; asks the value; cites KB-107 (cancelling)
+
+missed an article, no knowledge failure noted: 14
+   c083 msg 1 [] | "Where's my refund?" | Hands off as unresolved_twice on the first question, then again (2 tickets); never asks for the orde
+   c095 msg 3 [] | 'Thanks. Can I also get the delivery cost back?' | Issues £36 refund, then says it needs a photo 'so I can proceed' and that it 'can issue' £36
+   c049 msg 1 [] | 'Has my sofa been sent yet? HL-10290, kofi.mensah@example.com' | 
+   c074 msg 1 [] | "HL-10260 still hasn't arrived and it's been nearly two weeks. ella.obr" | 
+   c075 msg 1 [] | "My lamp HL-10240 hasn't arrived, I want a refund. ben.walker@example.c" | 
+   c067 msg 1 [] | 'One of the cushions in HL-10322 has a stain. sam.jones@example.com' | Asks the customer the value of the stained cushion instead of looking it up
+   c077 msg 1 [] | 'The fan heater from HL-10330 started smoking. tom.harris@example.com' | 
+   c078 msg 1 [] | 'The table lamp I bought from you sparked and burnt my hand. What shoul' | 
+   c079 msg 1 [] | "My kettle's handle got really hot and I burnt my fingers" | Correct safety hand-off, but 'they will be in touch shortly'
+   c062 msg 1 [] | 'One of the mugs in HL-10231 was chipped, amira.khan@example.com. Can I' | Asks the customer the mug's price instead of looking up HL-10231 (email given)
+   c069 msg 1 [] | 'My order HL-10252 arrived with a cracked chair leg. Can I get my money' | Cracked chair (£145): no hand-off; asks what amount to refund 'up to £50'
+   c070 msg 1 [] | 'The rug from HL-10244 arrived with a big stain. chloe.martin@example.c' | Rug £218, delivered 40 days ago: no lookup, no hand-off, asks for a photo as if within 14 days
+   c082 msg 1 [] | 'this bot is useless, get me a human' | 
+   c084 msg 1 [] | "I'm going to take you to the small claims court if I don't get my mone" | Correct legal hand-off, but 'Please stay on the line, and they will take over'

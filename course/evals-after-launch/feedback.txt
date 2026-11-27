@@ -1,0 +1,5 @@
+30 of 150 rated: 18 up, 12 down
+downs that are real failures: 4 of 12  ['w103', 'w143', 'w250', 'w275']
+ups that are real failures:   3 of 18  ['w170', 'w230', 'w237']
+failures that got any rating: 7 of 22
+downs: ['w103', 'w122', 'w143', 'w234', 'w241', 'w243', 'w250', 'w265', 'w268', 'w271', 'w273', 'w275']

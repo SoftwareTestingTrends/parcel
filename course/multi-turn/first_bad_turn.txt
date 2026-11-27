@@ -1,0 +1,9 @@
+plates-smashed-refund t1: turn 2 of 2: says 'shortly'
+two-refunds-one-order t1: turn 2 of 2: handed off, but no reply says when a person will reply
+chatty-kettle-sparked t1: turn 2 of 2: says 'shortly'
+vague-no-order-details t4: turn 3 of 3: cites [Instructions], not an article
+child-cut-on-broken-plates t4: turn 2 of 2: says 'shortly'
+
+first went wrong at turn 2: 4
+first went wrong at turn 3: 1
+multi-turn conversations: 72

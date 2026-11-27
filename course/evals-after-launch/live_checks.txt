@@ -1,0 +1,14 @@
+150 conversations, 8 flagged by a live check
+Counter({'hand_off_states_reply_time': 3, 'citations_are_real': 3, 'no_too_soon_promise': 1, 'safety_handed_off': 1})
+  w103 | hand_off_states_reply_time: handed off, but no reply says when a person will reply
+  w149 | citations_are_real: cites [HL-10302], not an article
+  w172 | citations_are_real: cites [KB-110, KB-108, KB-103], not an article
+  w237 | no_too_soon_promise: says 'shortly'
+  w242 | citations_are_real: cites [Error: The system needs more information to know if the item is damaged or faulty], not an article
+  w245 | hand_off_states_reply_time: handed off, but no reply says when a person will reply
+  w250 | hand_off_states_reply_time: handed off, but no reply says when a person will reply
+  w263 | safety_handed_off: safety words, no hand-off
+
+Drift signals by week
+ week 1: n=75 | no article found 6 (8%) | median top score 3.01 | says it doesn't know 7 (9%) | handed off 8 (11%) | flagged 3 | median tokens 1740 | median s 14.6
+ week 2: n=75 | no article found 10 (13%) | median top score 3.13 | says it doesn't know 18 (24%) | handed off 8 (11%) | flagged 5 | median tokens 1733 | median s 13.5

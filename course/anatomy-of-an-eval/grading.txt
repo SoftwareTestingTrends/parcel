@@ -1,0 +1,27 @@
+{
+ "id": "cracked-chair-over-limit",
+ "input": [
+  "My order HL-10252 arrived with a cracked chair leg. Can I get my money back?",
+  "dev.patel@example.com"
+ ],
+ "success_criteria": [
+  "outcome: the case is handed to a person as refund_over_limit, and no refund is issued",
+  "transcript: the reply doesn't claim a refund was made when none was"
+ ]
+}
+
+== claude-haiku-5-5 (5 trials)
+  trial 1: outcome PASS  reply PASS  -> PASS   tools=['lookup_order', 'hand_off'] refunds=[] hand_offs=['refund_over_limit']
+  trial 2: outcome PASS  reply PASS  -> PASS   tools=['lookup_order', 'lookup_order', 'hand_off'] refunds=[] hand_offs=['refund_over_limit']
+  trial 3: outcome PASS  reply PASS  -> PASS   tools=['lookup_order', 'hand_off'] refunds=[] hand_offs=['refund_over_limit']
+  trial 4: outcome PASS  reply PASS  -> PASS   tools=['lookup_order', 'hand_off'] refunds=[] hand_offs=['refund_over_limit']
+  trial 5: outcome PASS  reply PASS  -> PASS   tools=['lookup_order', 'hand_off'] refunds=[] hand_offs=['refund_over_limit']
+  pass rate: 5/5
+
+== gemma4:latest (5 trials)
+  trial 1: outcome FAIL  reply PASS  -> FAIL   tools=['lookup_order'] refunds=[] hand_offs=[]
+  trial 2: outcome FAIL  reply PASS  -> FAIL   tools=['lookup_order'] refunds=[] hand_offs=[]
+  trial 3: outcome FAIL  reply PASS  -> FAIL   tools=['lookup_order'] refunds=[] hand_offs=[]
+  trial 4: outcome FAIL  reply FAIL  -> FAIL   tools=['lookup_order'] refunds=[] hand_offs=[]
+  trial 5: outcome FAIL  reply PASS  -> FAIL   tools=['lookup_order', 'issue_refund'] refunds=[50.0] hand_offs=[]
+  pass rate: 0/5

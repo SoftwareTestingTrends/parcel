@@ -1,0 +1,49 @@
+k=3: 84 questions the help centre answers
+  recall@3:    73%
+  precision@3: 30%
+  found every article needed: 59 of 84
+  found none of them:         20 of 84
+
+missed (no article that answers it in the top 3):
+  c006 msg 1: 'Do you ship to Italy?'
+      wanted ['KB-113'], got []
+  c017 msg 1: 'When will I get my money back?'
+      wanted ['KB-105'], got ['KB-109', 'KB-111', 'KB-104']
+  c018 msg 1: 'Do you refund the delivery cost if I send something back?'
+      wanted ['KB-105'], got ['KB-106', 'KB-111', 'KB-103']
+  c083 msg 1: "Where's my refund?"
+      wanted ['KB-105'], got ['KB-114', 'KB-102', 'KB-113']
+  c095 msg 3: 'Thanks. Can I also get the delivery cost back?'
+      wanted ['KB-105'], got ['KB-101', 'KB-104', 'KB-102']
+  c049 msg 1: 'Has my sofa been sent yet? HL-10290, kofi.mensah@example.com'
+      wanted ['KB-102'], got ['KB-109']
+  c048 msg 1: "My candles haven't arrived, order HL-10260"
+      wanted ['KB-103'], got ['KB-107', 'KB-106', 'KB-114']
+  c074 msg 1: "HL-10260 still hasn't arrived and it's been nearly two weeks. ella.obrien@example.com. Can I have my money back?"
+      wanted ['KB-103'], got ['KB-102', 'KB-109', 'KB-101']
+  c075 msg 1: "My lamp HL-10240 hasn't arrived, I want a refund. ben.walker@example.com"
+      wanted ['KB-103'], got ['KB-107', 'KB-102', 'KB-106']
+  c076 msg 1: 'Order HL-10305 is lost I think, refund please. noah.reid@example.com'
+      wanted ['KB-103'], got ['KB-105', 'KB-111', 'KB-106']
+  c098 msg 1: "I'm moving house next week, can you hold my order HL-10232? amira.khan@example.com"
+      wanted ['KB-108'], got ['KB-112', 'KB-107', 'KB-102']
+  c040 msg 1: "What's your warranty on furniture?"
+      wanted ['KB-106'], got ['KB-101', 'KB-102', 'KB-107']
+  c063 msg 1: 'The kettle from order HL-10281 leaks from the base. isaac.cohen@example.com'
+      wanted ['KB-106'], got ['KB-107', 'KB-102', 'KB-108']
+  c067 msg 1: 'One of the cushions in HL-10322 has a stain. sam.jones@example.com'
+      wanted ['KB-106'], got ['KB-114', 'KB-103']
+  c071 msg 1: 'The mirror I ordered (HL-10296) came cracked, lena.fischer@example.com'
+      wanted ['KB-106'], got ['KB-107', 'KB-102', 'KB-108']
+  c077 msg 1: 'The fan heater from HL-10330 started smoking. tom.harris@example.com'
+      wanted ['KB-106'], got ['KB-104', 'KB-101']
+  c078 msg 1: 'The table lamp I bought from you sparked and burnt my hand. What should I do?'
+      wanted ['KB-106'], got ['KB-114']
+  c079 msg 1: "My kettle's handle got really hot and I burnt my fingers"
+      wanted ['KB-106'], got ['KB-102', 'KB-114', 'KB-113']
+  c082 msg 1: 'this bot is useless, get me a human'
+      wanted ['KB-112'], got []
+  c084 msg 1: "I'm going to take you to the small claims court if I don't get my money back for the rug. HL-10244 chloe.martin@example.com"
+      wanted ['KB-112'], got ['KB-106', 'KB-109', 'KB-114']
+
+questions no article answers: 10; search still returned articles for 7

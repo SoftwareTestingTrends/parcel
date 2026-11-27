@@ -1,0 +1,9 @@
+conversation  our label  default score  with penalize_ambiguous_claims
+c011          FAIL       1.00           0.33 FAIL
+c048          FAIL       1.00           0.38 FAIL
+c064          FAIL       1.00           0.33 FAIL
+c098          FAIL       1.00           0.00 FAIL
+c001          PASS       1.00           1.00 pass
+c037          PASS       1.00           0.00 FAIL
+c053          PASS       1.00           0.20 FAIL
+c063          PASS       1.00           0.00 FAIL
